@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/style_luzes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/Departal - fivecom.png">
+    <title>Departal - Luzes de Natal</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <img src="../images/logo - site.png" alt="Departal - Sua Loja de Departamento" id="logo">
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Início</a></li>
+          <li><a href="Sobre.html">Sobre Nós</a></li>
+          <li><a href="Contato.html">Contato</a></li>
+        </ul>
+        <!-- BURGER -->
+        <button class="burger" onclick="toggleMenu()">
+          <span class="burger-icon"></span>
+        </button>
+      </nav>
+      <!-- MENU FORA DA NAVBAR -->
+      <div class="menu">
+        <nav>
+          <a href="decoracao.html" style="animation-delay: 0.3s">Decoração</a>
+          <a href="presentes.html" style="animation-delay: 0.4s">Presentes</a>
+          <a href="roupas.html" style="animation-delay: 0.5s">Roupas</a>
+          <a href="guirlandas.html" style="animation-delay: 0.6s">Guirlandas</a>
+          <a href="presepios.html" style="animation-delay: 0.7s">Presépios</a>
+        </nav>
+        <script>
+          const toggleMenu = () => document.body.classList.toggle("open");
+        </script>
+      </div>
+    </header>
+
+    <section class="luzes-container">
+        <div class="hero-section">
+            <h1>Luzes de Natal</h1>
+            <p>Ilumine sua casa com a magia do Natal! LEDS, pisca-piscas e decorações luminosas</p>
+        </div>
+
+        <!-- Filtros por Tipo -->
+        <div class="filtros-categoria">
+            <button class="filtro-btn ativo" data-categoria="todos">Todas as Luzes</button>
+            <button class="filtro-btn" data-categoria="arvore">Para Árvore</button>
+            <button class="filtro-btn" data-categoria="exterior">Exterior</button>
+            <button class="filtro-btn" data-categoria="led">LEDs</button>
+            <button class="filtro-btn" data-categoria="figuras">Figuras Luminosas</button>
+        </div>
+
+        <h2 class="section-title">Iluminação Natalina</h2>
+
+        <div class="produtos-grid">
+            <!-- Produto 1 - Para Árvore -->
+            <div class="produto-card" data-categoria="arvore led">
+                <div class="produto-imagem">
+                    <img src="https://a-static.mlcdn.com.br/420x420/rolo-fita-led-rgb-5050-10m-colorido-kit-com-controle-e-fonte/ssseguranca/b56046cc336f11ec9eff4201ac185033/1ff4c568fcc28685681ffdc94027129f.jpeg" alt="Fita LED para Árvore">
+                </div>
+                <div class="produto-info">
+                    <h3>Fita LED Colorida 10m</h3>
+                    <p>Com controle remoto e 16 cores - impermeável para uso interno e externo</p>
+                    <div class="especificacoes">
+                        <span class="espec">🔌 10 metros</span>
+                        <span class="espec">🎨 16 cores</span>
+                        <span class="espec">📱 Controle</span>
+                    </div>
+                    <div class="produto-preco">R$ 89,90</div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+                <div class="destaque-tag">+ Vendida</div>
+            </div>
+
+            <!-- Produto 2 - Figuras -->
+            <div class="produto-card" data-categoria="figuras exterior">
+                <div class="produto-imagem">
+                    <img src="https://http2.mlstatic.com/D_Q_NP_986371-MLU79327923181_092024-O.webp" alt="Rena LED">
+                </div>
+                <div class="produto-info">
+                    <h3>Rena LED 1.2m</h3>
+                    <p>Decoração externa com iluminação quente - perfeita para jardim</p>
+                    <div class="especificacoes">
+                        <span class="espec">💡 LED Quente</span>
+                        <span class="espec">🌧️ Impermeável</span>
+                        <span class="espec">📏 1.2 metros</span>
+                    </div>
+                    <div class="produto-preco oferta">
+                        <span class="preco-original">R$ 159,90</span>
+                        <span class="preco-promocional">R$ 129,90</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+                <div class="promocao-tag">-19%</div>
+            </div>
+
+            <!-- Produto 3 - Árvore -->
+            <div class="produto-card" data-categoria="arvore">
+                <div class="produto-imagem">
+                    <img src="https://m.magazineluiza.com.br/a-static/420x420/pisca-pisca-natal-solar-led-200-lampadas-colorida-ou-dourado-20m-8-modos-decoracao-enfeite-luzes-externa-jardim-modus/asalvcomercio/vdl200/cc219d80d1cdfa3e45fd3811760d4706.jpeg" alt="Pisca-Pisca Tradicional">
+                </div>
+                <div class="produto-info">
+                    <h3>Pisca-Pisca 200 Lâmpadas</h3>
+                    <p>Luzes intermitentes multicoloridas - 8 modos de funcionamento</p>
+                    <div class="especificacoes">
+                        <span class="espec">💡 200 lâmpadas</span>
+                        <span class="espec">⚡ 8 modos</span>
+                        <span class="espec">🔌 10m cabo</span>
+                    </div>
+                    <div class="produto-preco">R$ 49,90</div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+                <div class="destaque-tag">Clássico</div>
+            </div>
+
+            <!-- Produto 4 - Exterior -->
+            <div class="produto-card" data-categoria="exterior led">
+                <div class="produto-imagem">
+                    <img src="https://cdn.awsli.com.br/600x700/457/457262/produto/237663673/whatsapp-image-2023-10-18-at-10-49-44-s1w1hu2z5s.jpeg" alt="Cortina de Luzes">
+                </div>
+                <div class="produto-info">
+                    <h3>Cortina de LED 300 LEDs</h3>
+                    <p>Perfeita para janelas e varandas - efeito chuva de luzes</p>
+                    <div class="especificacoes">
+                        <span class="espec">✨ 300 LEDs</span>
+                        <span class="espec">📏 3x2 metros</span>
+                        <span class="espec">🎮 Controle</span>
+                    </div>
+                    <div class="produto-preco">R$ 119,90</div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- Produto 5 - Figuras -->
+            <div class="produto-card" data-categoria="figuras">
+                <div class="produto-imagem">
+                    <img src="https://cdn.awsli.com.br/300x300/761/761999/produto/43258713/38128d256f.jpg" alt="Boneco de Neve LED">
+                </div>
+                <div class="produto-info">
+                    <h3>Boneco de Neve LED 80cm</h3>
+                    <p>Decoração interna com iluminação suave - sensor de movimento</p>
+                    <div class="especificacoes">
+                        <span class="espec">⛄ 80cm</span>
+                        <span class="espec">🔍 Sensor</span>
+                        <span class="espec">💡 LED Branco</span>
+                    </div>
+                    <div class="produto-preco oferta">
+                        <span class="preco-original">R$ 99,90</span>
+                        <span class="preco-promocional">R$ 79,90</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+                <div class="promocao-tag">-20%</div>
+            </div>
+
+            <!-- Produto 6 - LED -->
+            <div class="produto-card" data-categoria="led arvore">
+                <div class="produto-imagem">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_853349-MLB51584423108_092022-O-cordo-pisca-500-leds-natal-8-funcoes-40m-110v.webp" alt="LEDs para Árvore">
+                </div>
+                <div class="produto-info">
+                    <h3>LEDs para Árvore 500 pontos</h3>
+                    <p>Iluminação profissional para árvores grandes - branco quente</p>
+                    <div class="especificacoes">
+                        <span class="espec">💡 500 LEDs</span>
+                        <span class="espec">⚪ Branco Quente</span>
+                        <span class="espec">🔌 15m cabo</span>
+                    </div>
+                    <div class="produto-preco">R$ 189,90</div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Kits Completos -->
+        <div class="ofertas-especiais">
+            <h2 class="section-title">Kits de Iluminação</h2>
+            
+            <div class="kits-grid">
+                <div class="kit-item">
+                    <div class="kit-imagem">
+                        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT23i3zYo6t9Xod8jjIWfPwQY09DbewjWH5xhUzZ4Vtt3CVLZmTTl2mn-sIQIvFRlzBJM8v0GJhZW_TTzjqL2UHijYrkO6DGguvPzTMBBYckUmKBNLkQ1NILOhHRUhxDqZGfkdpAQ&usqp=CAc" alt="Kit Iluminação Externa">
+                    </div>
+                    <div class="kit-info">
+                        <h3>Kit Iluminação Externa Completo</h3>
+                        <p>Inclui: Cortina LED + 2 Renas + Fachada + Controlador</p>
+                        <div class="kit-especificacoes">
+                            <span>🏠 Para toda casa</span>
+                            <span>🌧️ À prova d'água</span>
+                            <span>🎮 Controle único</span>
+                        </div>
+                        <div class="kit-preco">R$ 399,90</div>
+                        <button class="btn-comprar">Comprar Kit</button>
+                    </div>
+                </div>
+                
+                <div class="kit-item">
+                    <div class="kit-imagem">
+                        <img src="https://images.tcdn.com.br/img/img_prod/1384028/kit_arvore_completa_premium_120cm_3113_1_58b582ab53a9feeb0f338e9bc7cca2fe.jpg" alt="Kit Árvore Premium">
+                    </div>
+                    <div class="kit-info">
+                        <h3>Kit Árvore Premium</h3>
+                        <p>LEDs + Pisca-pisca + Ponto Central + Controlador RGB</p>
+                        <div class="kit-especificacoes">
+                            <span>🎄 Árvore completa</span>
+                            <span>🌈 Cores RGB</span>
+                            <span>📱 App control</span>
+                        </div>
+                        <div class="kit-preco oferta">
+                            <span class="preco-original">R$ 299,90</span>
+                            <span class="preco-promocional">R$ 249,90</span>
+                        </div>
+                        <button class="btn-comprar">Comprar Kit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Guia de Instalação -->
+        <div class="guia-instalacao">
+            <h3>🔧 Guia de Instalação</h3>
+            <div class="passos-grid">
+                <div class="passo-item">
+                    <div class="passo-numero">1</div>
+                    <h4>Planejamento</h4>
+                    <p>Meça os espaços e planeje a disposição das luzes antes de instalar</p>
+                </div>
+                <div class="passo-item">
+                    <div class="passo-numero">2</div>
+                    <h4>Segurança</h4>
+                    <p>Verifique a voltagem e use extensões adequadas para evitar sobrecarga</p>
+                </div>
+                <div class="passo-item">
+                    <div class="passo-numero">3</div>
+                    <h4>Instalação</h4>
+                    <p>Comece pela fonte de energia e distribua as luzes de forma organizada</p>
+                </div>
+                <div class="passo-item">
+                    <div class="passo-numero">4</div>
+                    <h4>Teste Final</h4>
+                    <p>Teste todas as luzes antes de finalizar a instalação</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Dicas de Iluminação -->
+        <div class="dicas-iluminacao">
+            <h3>💡 Dicas de Iluminação Natalina</h3>
+            <div class="dicas-grid">
+                <div class="dica-item">
+                    <h4>Para a Árvore</h4>
+                    <p>Use de 100 a 200 lúmens por pé de árvore. Comece de dentro para fora.</p>
+                </div>
+                <div class="dica-item">
+                    <h4>Exterior</h4>
+                    <p>Prefira luzes à prova d'água e verifique a voltagem para ambientes externos.</p>
+                </div>
+                <div class="dica-item">
+                    <h4>Economia</h4>
+                    <p>LEDs consomem até 80% menos energia que lâmpadas tradicionais.</p>
+                </div>
+                <div class="dica-item">
+                    <h4>Efeitos</h4>
+                    <p>Misture luzes fixas e pisca-piscas para criar profundidade visual.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Eficiência Energética -->
+        <div class="eficiencia-energetica">
+            <div class="eficiencia-content">
+                <h3>⚡ Economize com LED!</h3>
+                <p>Nossas luzes LED consomem menos energia e duram até 50.000 horas</p>
+                <div class="vantagens-grid">
+                    <div class="vantagem-item">
+                        <span class="vantagem-icone">💡</span>
+                        <span>80% Economia</span>
+                    </div>
+                    <div class="vantagem-item">
+                        <span class="vantagem-icone">⏰</span>
+                        <span>50.000 horas</span>
+                    </div>
+                    <div class="vantagem-item">
+                        <span class="vantagem-icone">🌡️</span>
+                        <span>Pouco calor</span>
+                    </div>
+                    <div class="vantagem-item">
+                        <span class="vantagem-icone">🛡️</span>
+                        <span>2 anos garantia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-natalino">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 id="footer-logo">Departal</h3>
+                    <p>Ilumine seu Natal com nossas luzes mágicas! Qualidade e beleza para suas festas.</p>
+                    <button id="btn-topo-footer" class="btn-topo-footer">↑ Voltar ao Topo</button>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                       <ul>
+                        <li><a href="home.html">Início</a></li>
+                        <li><a href="Sobre.html">Sobre Nós</a></li>
+                        <li><a href="Contato.html">Contato</a></li>
+                        <li><a href="decoracao.html">Decorações</a></li>
+                        <li><a href="presentes.html">Presentes</a></li>
+                        <li><a href="roupas.html">Roupas</a></li>
+                        <li><a href="guirlandas.html">Guirlandas</a></li>
+                        <li><a href="presepios.html">Presépios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Suporte Técnico</h4>
+                    <ul>
+                        <li><a href="#">Guia de Instalação</a></li>
+                        <li><a href="#">Dúvidas sobre LED</a></li>
+                        <li><a href="#">Calculadora de Consumo</a></li>
+                        <li><a href="#">Assistência Técnica</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter Luzes</h4>
+                    <p>Receba novidades em iluminação natalina e promoções!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu email" required>
+                        <button type="submit">💡</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Departal | Ilumine seu Natal com Magia!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filtros de categoria para luzes
+        document.addEventListener('DOMContentLoaded', function() {
+            const filtroBtns = document.querySelectorAll('.filtro-btn');
+            const produtoCards = document.querySelectorAll('.produto-card');
+            
+            filtroBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove classe ativa de todos os botões
+                    filtroBtns.forEach(b => b.classList.remove('ativo'));
+                    // Adiciona classe ativa ao botão clicado
+                    this.classList.add('ativo');
+                    
+                    const categoria = this.getAttribute('data-categoria');
+                    
+                    // Filtra os produtos
+                    produtoCards.forEach(card => {
+                        const categoriasProduto = card.getAttribute('data-categoria').split(' ');
+                        
+                        if (categoria === 'todos' || categoriasProduto.includes(categoria)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Voltar ao topo
+            document.getElementById('btn-topo-footer').addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Efeito de brilho nas luzes
+            const cards = document.querySelectorAll('.produto-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.boxShadow = '0 10px 25px rgba(255, 215, 0, 0.3)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

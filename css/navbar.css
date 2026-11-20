@@ -1,0 +1,202 @@
+/* Estilo geral da navbar */
+.navbar {
+  background-color: rgb(8, 132, 8);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  /* MUDANÇA AQUI: Torna a navbar fixa */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  
+  /* Adiciona sombra para depth */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+/* Container da logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo da logo */
+#logo {
+  height: 45px; /* Altura fixa para a logo */
+  width: auto; /* Largura automática para manter proporção */
+}
+
+/* Lista de links */
+.nav-links {
+  list-style: none; /* Tira as bolinhas da lista */
+  display: flex; /* Coloca os links lado a lado */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimentos padrão */
+}
+
+/* Cada item da lista */
+.nav-links li {
+  margin-left: 27px; /* Espaço entre os links */
+}
+
+/* Estilo dos links */
+.nav-links li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; 
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: block;
+  padding: 5px 0;
+}
+
+.nav-links li a:hover {
+  color: #A60D1A; /* Cor ao passar o mouse */
+}
+
+.burger, .menu {
+    position: fixed;
+}
+
+/* BURGER NA NAVBAR */
+.burger {
+    z-index: 1001;
+    position: relative; /* Mudei de fixed para relative */
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    margin-left: auto; /* Empurra para direita */
+}
+
+/* MENU DO LADO DIREITO */
+.menu {
+    z-index: 999;
+    top: 0;
+    right: 0; /* Mudei de left para right */
+    left: auto; /* Garante que fique na direita */
+    display: grid;
+    place-items: center;
+    width: 50%;
+    max-width: 400px;
+    height: 100%;
+    background: rgb(0 0 0 / 80%);
+    backdrop-filter: blur(10px);
+    transform: translateX(100%); /* Mudei de -100% para 100% */
+    transition: transform 0.425s cubic-bezier(0.175,0.885,0.32,1);
+    position: fixed;
+}
+
+/* ANIMAÇÃO CORRIGIDA PARA LADO DIREITO */
+@keyframes menu-in {
+    0% {
+        clip-path: ellipse(0% 0% at 100% 50%); /* Mudei de 0% para 100% */
+    }
+    100% {
+        clip-path: ellipse(120% 120% at 100% 50%); /* Mudei de 0% para 100% */
+    }
+}
+
+body.open .menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    animation: menu-in 0.425s;
+}
+
+/* LINKS SEM SUBLINHADO E ORGANIZADOS */
+.menu a {
+    position: relative;
+    color: #f9f9f9;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 20px 0;
+    height: 70px;
+    width: 100%;
+    transition: 0.4s;
+    text-decoration: none; /* REMOVE SUBLINHADO */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* REMOVE EFEITOS DE LINHA ANTIGOS */
+.menu a::before,
+.menu a::after {
+    display: none; /* Remove as linhas animadas */
+}
+
+/* ESTILOS HOVER SIMPLES */
+.menu a:hover {
+    color: #ffd700;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-10px);
+}
+
+/* ANIMAÇÃO DE ENTRADA */
+body.open .menu a {
+    animation: appear 0.25s backwards;
+}
+
+@keyframes appear {
+    0% { 
+        opacity: 0;
+        transform: translateX(30px); /* Mudei de -30px para 30px */
+    } 
+    100% { 
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* BURGER ICON AJUSTADO */
+.burger-icon { 
+    position: relative;
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+.burger-icon::before, .burger-icon::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.burger-icon::before { 
+    top: -8px; 
+}
+
+.burger-icon::after { 
+    top: 8px; 
+}
+
+body.open .burger-icon {
+    background: transparent; /* Mantenha se necessário, ou ajuste */
+}
+
+body.open .burger-icon::before {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+body.open .burger-icon::after {
+    transform: rotate(-45deg) translate(5px, -6px);
+}

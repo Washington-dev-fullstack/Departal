@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/style_contato.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/Departal - fivecom.png">
+    <title>Departal - Sua Loja de Departamento</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <img src="../images/logo - site.png" alt="Departal - Sua Loja de Departamento" id="logo">
+        </div>
+        <ul class="nav-links">
+         <li><a href="Sobre.html">Sobre Nós</a></li>
+         <li><a href="home.html">Início</a></li>
+       </ul>
+    <!-- BURGER -->
+       <button class="burger" onclick="toggleMenu()">
+         <span class="burger-icon"></span>
+        </button>
+      </nav>
+    <!-- MENU FORA DA NAVBAR -->
+      <div class="menu">
+        <nav>
+          <a href="decoracao.html" style="animation-delay: 0.2s">Decoração</a>
+          <a href="presentes.html" style="animation-delay: 0.3s">Presentes</a>
+          <a href="roupas.html" style="animation-delay: 0.4s">Roupas</a>
+          <a href="luzes.html" style="animation-delay: 0.5s">Luzes</a>
+          <a href="guirlandas.html" style="animation-delay: 0.6s">Guirlandas</a>
+          <a href="presepios.html" style="animation-delay: 0.7s">Presépios</a>
+        </nav>
+        <script>
+          const toggleMenu = () => document.body.classList.toggle("open");
+        </script>
+      </div>
+    </header>
+
+    <section class="contato-hero">
+      <div class="hero-content">
+        <h1>Entre em Contato Conosco</h1>
+        <p>Estamos aqui para ajudar! Fale com nossa equipe</p>
+      </div>
+    </section>
+
+    <main class="contato-container">
+      <div class="contato-info">
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <h3>Endereço</h3>
+          <p>Parque Ortolãndia, rua Fabrício II, número 822</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">📞</div>
+          <h3>Telefone</h3>
+          <p>(19) 92366-6666</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">✉️</div>
+          <h3>E-mail</h3>
+          <p>Departal.org@gmail.com</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">⏰</div>
+          <h3>Horário de Atendimento</h3>
+          <p>Segunda a Sábado: 9h às 18h<br>Domingo: 10h às 16h</p>
+        </div>
+      </div>
+
+      <div class="formulario-container">
+        <h2>Suporte ao Cliente</h2>
+        <p class="form-descricao">Tem alguma dúvida, sugestão ou precisa de ajuda? Preencha o formulário abaixo que retornaremos em até 24h.</p>
+
+        <form class="formulario-contato">
+          <div class="form-group">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="telefone">Telefone (opcional)</label>
+            <input type="tel" id="telefone" name="telefone">
+          </div>
+
+          <div class="form-group">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto" required>
+              <option value="">Selecione um assunto</option>
+              <option value="duvida">Dúvida sobre produtos</option>
+              <option value="suporte">Suporte técnico</option>
+              <option value="reclamacao">Reclamação</option>
+              <option value="sugestao">Sugestão</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Descreva sua dúvida ou solicitação..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-enviar">
+            <span class="btn-text">Enviar Mensagem</span>
+            <span class="btn-icon">🎄</span>
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer-natalino">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 id="footer-logo">Departal</h3>
+        <p>Sua loja de departamento ainda mais forte com super descontos natalinos!</p>
+        <button id="btn-topo-footer" class="btn-topo-footer">↑ Voltar ao Topo</button>
+      </div>
+
+      <div class="footer-section">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="Sobre.html">Sobre Nós</a></li>
+          <li><a href="Contato.html">Contato</a></li>
+          <li><a href="decoracao.html">Decorações</a></li>
+          <li><a href="presentes.html">Presentes</a></li>
+          <li><a href="roupas.html">Roupas</a></li>
+          <li><a href="luzes.html">Luzes</a></li>
+          <li><a href="guirlandas.html">Guirlandas</a></li>
+          <li><a href="presepios.html">Presépios</a></li>
+        </ul>
+      </div>
+            
+      <div class="footer-section">
+        <h4>Newsletter</h4>
+        <p>Informe o seu e-mail e faça parte dos primeiros a receber as nossas ofertas especiais!</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Seu email" required>
+          <button type="submit">🎅</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Departal | Feliz Natal e Boas Compras!</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Função para voltar ao topo suavemente
+document.getElementById('btn-topo-footer').addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+</script>
+</body>
+</html>

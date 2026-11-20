@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/style_presepios.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/Departal - fivecom.png">
+    <title>Departal - Presépios de Natal</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <img src="../images/logo - site.png" alt="Departal - Sua Loja de Departamento" id="logo">
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Início</a></li>
+          <li><a href="Sobre.html">Sobre Nós</a></li>
+          <li><a href="Contato.html">Contato</a></li>
+        </ul>
+        <!-- BURGER -->
+        <button class="burger" onclick="toggleMenu()">
+          <span class="burger-icon"></span>
+        </button>
+      </nav>
+      <!-- MENU FORA DA NAVBAR -->
+      <div class="menu">
+        <nav>
+          <a href="decoracao.html" style="animation-delay: 0.3s">Decoração</a>
+          <a href="presentes.html" style="animation-delay: 0.4s">Presentes</a>
+          <a href="roupas.html" style="animation-delay: 0.5s">Roupas</a>
+          <a href="luzes.html" style="animation-delay: 0.6s">Luzes</a>
+          <a href="guirlandas.html" style="animation-delay: 0.7s">Guirlandas</a>
+        </nav>
+        <script>
+          const toggleMenu = () => document.body.classList.toggle("open");
+        </script>
+      </div>
+    </header>
+
+    <section class="presepios-container">
+        <div class="hero-section">
+            <h1>Presépios de Natal</h1>
+            <p>Celebre o verdadeiro significado do Natal com lindas representações do nascimento de Jesus</p>
+        </div>
+
+        <!-- Filtros por Tipo -->
+        <div class="filtros-categoria">
+            <button class="filtro-btn ativo" data-categoria="todos">Todos os Presépios</button>
+            <button class="filtro-btn" data-categoria="tradicional">Tradicionais</button>
+            <button class="filtro-btn" data-categoria="moderno">Modernos</button>
+            <button class="filtro-btn" data-categoria="luminoso">Com Luzes</button>
+            <button class="filtro-btn" data-categoria="artesanal">Artesanais</button>
+        </div>
+
+        <h2 class="section-title">Representações do Nascimento</h2>
+
+        <div class="produtos-grid">
+            <!-- Presépio 1 - Tradicional -->
+            <div class="produto-card" data-categoria="tradicional">
+                <div class="produto-imagem">
+                    <img src="https://static.casadamae.com.br/public/casadamae/imagens/produtos/presepio-importado-de-resina-color-tradicional-12-pecas-60-cm-68f7e8e4d82a6.jpg" alt="Presépio Tradicional de Madeira">
+                </div>
+                <div class="produto-info">
+                    <h3>Presépio Tradicional 12 peças</h3>
+                    <p>Conjunto completo em madeira entalhada - família sagrada, animais e reis magos</p>
+                    <div class="especificacoes">
+                        <span class="espec">🎭 12 peças</span>
+                        <span class="espec">🪵 Madeira</span>
+                        <span class="espec">📏 40cm</span>
+                    </div>
+                    <div class="produto-preco">R$ 189,90</div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+                <div class="destaque-tag">Clássico</div>
+            </div>
+
+            <!-- Presépio 2 - Luminoso -->
+            <div class="produto-card" data-categoria="luminoso moderno">
+                <div class="produto-imagem">
+                    <img src="https://cdn.awsli.com.br/600x450/2557/2557832/produto/220675115/pres-pio-estrela-vcxahtitk5.png" alt="Presépio Iluminado">
+                </div>
+                <div class="produto-info">
+                    <h3>Presépio LED com Estrela</h3>
+                    <p>Iluminação suave e estrela piscante - efeito noturno realista</p>
+                    <div class="especificacoes">
+                        <span class="espec">💡 LED</span>
+                        <span class="espec">⭐ Estrela</span>
+                        <span class="espec">🎭 8 peças</span>
+                    </div>
+                    <div class="produto-preco oferta">
+                        <span class="preco-original">R$ 159,90</span>
+                        <span class="preco-promocional">R$ 129,90</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+                <div class="promocao-tag">-19%</div>
+            </div>
+
+            <!-- Presépio 3 - Artesanal -->
+            <div class="produto-card" data-categoria="artesanal tradicional">
+                <div class="produto-imagem">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_690263-MLB72943750891_112023-O-presepio-artesanal-de-cermica-pintado-a-mo-natal-decoraco.webp" alt="Presépio Cerâmica Artesanal">
+                </div>
+                <div class="produto-info">
+                    <h3>Presépio Cerâmica Pintado à Mão</h3>
+                    <p>Peças únicas pintadas manualmente - detalhes em ouro e prata</p>
+                    <div class="especificacoes">
+                        <span class="espec">👨‍🎨 Artesanal</span>
+                        <span class="espec">🏺 Cerâmica</span>
+                        <span class="espec">🎭 10 peças</span>
+                    </div>
+                    <div class="produto-preco">R$ 299,90</div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+                <div class="destaque-tag">Exclusivo</div>
+            </div>
+
+            <!-- Presépio 4 - Moderno -->
+            <div class="produto-card" data-categoria="moderno">
+                <div class="produto-imagem">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSl2-dMZWYJM_MnVt_5m-gFLcAwop9pC7WoYw7ogf0MfcbAZrbUOrbylc3KzVhfHoLsm6W_HRe27P3N20k2e9LKHNVOuF5aEP6nSVEZmb3IGkhVYZ-VmJAnZuQ" alt="Presépio Design Moderno">
+                </div>
+                <div class="produto-info">
+                    <h3>Presépio Minimalista Aço</h3>
+                    <p>Design contemporâneo em aço inox - perfeito para decoração moderna</p>
+                    <div class="especificacoes">
+                        <span class="espec">⚡ Moderno</span>
+                        <span class="espec">🔩 Aço Inox</span>
+                        <span class="espec">🎭 6 peças</span>
+                    </div>
+                    <div class="produto-preco">R$ 219,90</div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- Presépio 5 - Luminoso -->
+            <div class="produto-card" data-categoria="luminoso tradicional">
+                <div class="produto-imagem">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRNZ_yNRwAUQx2GVmz9XQg_5sMRiliSWzEXxDhq25hsvnFUy2H2kM6e8xKfrWbJXa3eBpBdAPtu6HfOaN--rsfGMGCgnPG_Pqwu67jzA0A" alt="Presépio Vila Iluminada">
+                </div>
+                <div class="produto-info">
+                    <h3>Presépio Vila Completa LED</h3>
+                    <p>Com casinhas, poço e árvores iluminadas - cenário completo de Belém</p>
+                    <div class="especificacoes">
+                        <span class="espec">🏘️ Vila</span>
+                        <span class="espec">💡 LED</span>
+                        <span class="espec">🎭 15 peças</span>
+                    </div>
+                    <div class="produto-preco oferta">
+                        <span class="preco-original">R$ 399,90</span>
+                        <span class="preco-promocional">R$ 329,90</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+                <div class="promocao-tag">-18%</div>
+            </div>
+
+            <!-- Presépio 6 - Artesanal -->
+            <div class="produto-card" data-categoria="artesanal">
+                <div class="produto-imagem">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS50Nn6uP44AYKO0rsZ7N85Mulg5Eenad8bwxacH7rbA6xJqMUyC0Fg2-fkJJwxIZdAtG6IhhTDNapRNY5hSSl7kjfIghVrQQciPGBeixio4LSZud6RvY2QAg" alt="Presépio Barro Nordestino">
+                </div>
+                <div class="produto-info">
+                    <h3>Presépio Barro Nordestino</h3>
+                    <p>Arte popular brasileira - peças em barro cozido com pigmentos naturais</p>
+                    <div class="especificacoes">
+                        <span class="espec">🇧🇷 Nordestino</span>
+                        <span class="espec">🧱 Barro</span>
+                        <span class="espec">🎭 9 peças</span>
+                    </div>
+                    <div class="produto-preco">R$ 179,90</div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Kits de Presépios -->
+        <div class="ofertas-especiais">
+            <h2 class="section-title">Kits de Presépios Completos</h2>
+            
+            <div class="kits-grid">
+                <div class="kit-item">
+                    <div class="kit-imagem">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_608379-MLB89052275317_072025-O.webp" alt="Kit Família Sagrada Premium">
+                    </div>
+                    <div class="kit-info">
+                        <h3>Kit Família Sagrada Premium</h3>
+                        <p>Presépio 12 peças + manjedoura iluminada + estrela + musgo decorativo</p>
+                        <div class="kit-especificacoes">
+                            <span>👨‍👩‍👧‍👦 Família completa</span>
+                            <span>💡 Iluminação</span>
+                            <span>🌿 Acessórios</span>
+                        </div>
+                        <div class="kit-preco">R$ 459,90</div>
+                        <button class="btn-comprar">Comprar Kit</button>
+                    </div>
+                </div>
+                
+                <div class="kit-item">
+                    <div class="kit-imagem">
+                        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQSy78ulA9TXATMaStnHJ3cOommKmhBHu7j9fTX8EHewp4wjYhwzptx0aqNw3l-q4KW5wMrluA_RuhI9-Y1BNQ5krMkUlMmmyPHyu0g9vr9qT3IMrdGvh6GmQ" alt="Kit Belém Completo">
+                    </div>
+                    <div class="kit-info">
+                        <h3>Kit Belém Completo</h3>
+                        <p>Vila iluminada + 20 personagens + animais + paisagem desértica</p>
+                        <div class="kit-especificacoes">
+                            <span>🏘️ Vila completa</span>
+                            <span>🎭 20 peças</span>
+                            <span>🌵 Cenário</span>
+                        </div>
+                        <div class="kit-preco oferta">
+                            <span class="preco-original">R$ 699,90</span>
+                            <span class="preco-promocional">R$ 599,90</span>
+                        </div>
+                        <button class="btn-comprar">Comprar Kit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Significado -->
+        <div class="significado-presepio">
+            <h3>✝️ O Significado do Presépio</h3>
+            <div class="significado-content">
+                <div class="significado-texto">
+                    <p>O presépio representa o nascimento de Jesus em Belém e é uma das tradições mais antigas do Natal. Criado por São Francisco de Assis no século XIII, nos ajuda a refletir sobre o verdadeiro significado desta data especial.</p>
+                    
+                    <div class="elementos-significado">
+                        <div class="elemento-item">
+                            <h4>👶 Menino Jesus</h4>
+                            <p>O centro de toda a celebração, representando o nascimento do Salvador</p>
+                        </div>
+                        <div class="elemento-item">
+                            <h4>👼 Maria e José</h4>
+                            <p>Os pais terrestres que acolheram e cuidaram do menino Jesus</p>
+                        </div>
+                        <div class="elemento-item">
+                            <h4>⭐ Estrela de Belém</h4>
+                            <p>Que guiou os Reis Magos até o local do nascimento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Montagem -->
+        <div class="guia-montagem">
+            <h3>🏗️ Guia de Montagem do Presépio</h3>
+            <div class="passos-grid">
+                <div class="passo-item">
+                    <div class="passo-numero">1</div>
+                    <h4>Escolha do Local</h4>
+                    <p>Selecione um local de destaque e respeito, preferencialmente central na decoração</p>
+                </div>
+                <div class="passo-item">
+                    <div class="passo-numero">2</div>
+                    <h4>Preparação da Base</h4>
+                    <p>Use musgo, palha ou tecido para criar a base da manjedoura</p>
+                </div>
+                <div class="passo-item">
+                    <div class="passo-numero">3</div>
+                    <h4>Posicionamento</h4>
+                    <p>Coloque a manjedoura primeiro, depois Maria e José, e por último o menino Jesus</p>
+                </div>
+                <div class="passo-item">
+                    <div class="passo-numero">4</div>
+                    <h4>Elementos Adicionais</h4>
+                    <p>Adicione animais, pastores e os Reis Magos completando o cenário</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Tradições -->
+        <div class="tradicoes">
+            <h3>📜 Tradições do Presépio</h3>
+            <div class="tradicoes-grid">
+                <div class="tradicao-item">
+                    <h4>🎄 Montagem Progressiva</h4>
+                    <p>Montar o presépio aos poucos durante o Advento, completando no dia 24</p>
+                </div>
+                <div class="tradicao-item">
+                    <h4>👑 Reis Magos Distantes</h4>
+                    <p>Colocar os Reis Magos longe e aproximá-los gradualmente até o dia 6 de janeiro</p>
+                </div>
+                <div class="tradicao-item">
+                    <h4>👶 Jesus no Natal</h4>
+                    <p>Colocar o menino Jesus apenas na noite de Natal, simbolizando seu nascimento</p>
+                </div>
+                <div class="tradicao-item">
+                    <h4>🕯️ Bênção do Presépio</h4>
+                    <p>Abençoar o presépio montado durante a ceia de Natal</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Acessórios -->
+        <div class="acessorios">
+            <div class="acessorios-content">
+                <h3>🎁 Acessórios para seu Presépio</h3>
+                <p>Complete sua representação com elementos especiais</p>
+                <div class="acessorios-grid">
+                    <div class="acessorio-item">
+                        <span class="acessorio-icone">🌿</span>
+                        <span>Musgo Natural</span>
+                    </div>
+                    <div class="acessorio-item">
+                        <span class="acessorio-icone">⭐</span>
+                        <span>Estrela LED</span>
+                    </div>
+                    <div class="acessorio-item">
+                        <span class="acessorio-icone">💡</span>
+                        <span>Iluminação Suave</span>
+                    </div>
+                    <div class="acessorio-item">
+                        <span class="acessorio-icone">🎵</span>
+                        <span>Caixa de Música</span>
+                    </div>
+                </div>
+                <button class="btn-acessorios">Ver Acessórios</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-natalino">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 id="footer-logo">Departal</h3>
+                    <p>Mantenha viva a tradição do presépio em seu lar. Qualidade e respeito em cada representação.</p>
+                    <button id="btn-topo-footer" class="btn-topo-footer">↑ Voltar ao Topo</button>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                       <ul>
+                        <li><a href="home.html">Início</a></li>
+                        <li><a href="Sobre.html">Sobre Nós</a></li>
+                        <li><a href="Contato.html">Contato</a></li>
+                        <li><a href="decoracao.html">Decorações</a></li>
+                        <li><a href="roupas.html">Roupas</a></li>
+                        <li><a href="presentes.html">Presentes</a></li>
+                        <li><a href="luzes.html">Luzes</a></li>
+                        <li><a href="guirlandas.html">Guirlandas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Significado e Tradição</h4>
+                    <ul>
+                        <li><a href="#">História do Presépio</a></li>
+                        <li><a href="#">Guia de Montagem</a></li>
+                        <li><a href="#">Tradições Familiares</a></li>
+                        <li><a href="#">Oração do Presépio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter Presépios</h4>
+                    <p>Receba inspirações e mantenha viva a tradição natalina!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu email" required>
+                        <button type="submit">✝️</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Departal | Que a Luz do Menino Jesus ilumine seu Lar!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filtros de categoria para presépios
+        document.addEventListener('DOMContentLoaded', function() {
+            const filtroBtns = document.querySelectorAll('.filtro-btn');
+            const produtoCards = document.querySelectorAll('.produto-card');
+            
+            filtroBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove classe ativa de todos os botões
+                    filtroBtns.forEach(b => b.classList.remove('ativo'));
+                    // Adiciona classe ativa ao botão clicado
+                    this.classList.add('ativo');
+                    
+                    const categoria = this.getAttribute('data-categoria');
+                    
+                    // Filtra os produtos
+                    produtoCards.forEach(card => {
+                        const categoriasProduto = card.getAttribute('data-categoria').split(' ');
+                        
+                        if (categoria === 'todos' || categoriasProduto.includes(categoria)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Efeito especial nos presépios
+            const cards = document.querySelectorAll('.produto-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                    this.style.boxShadow = '0 20px 40px rgba(139, 69, 19, 0.15)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                    this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                });
+            });
+
+            // Botão acessórios
+            const btnAcessorios = document.querySelector('.btn-acessorios');
+            if (btnAcessorios) {
+                btnAcessorios.addEventListener('click', function() {
+                    alert('🌟 Em breve nossa coleção completa de acessórios para presépio!');
+                });
+            }
+            
+            // Voltar ao topo
+            document.getElementById('btn-topo-footer').addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

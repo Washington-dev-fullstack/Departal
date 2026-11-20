@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/style_presentes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/Departal - fivecom.png">
+    <title>Departal - Presentes de Natal</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <img src="../images/logo - site.png" alt="Departal - Sua Loja de Departamento" id="logo">
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Início</a></li>
+          <li><a href="Sobre.html">Sobre Nós</a></li>
+          <li><a href="Contato.html">Contato</a></li>
+        </ul>
+        <!-- BURGER -->
+        <button class="burger" onclick="toggleMenu()">
+          <span class="burger-icon"></span>
+        </button>
+      </nav>
+      <!-- MENU FORA DA NAVBAR -->
+      <div class="menu">
+        <nav>
+          <a href="decoracao.html" style="animation-delay: 0.3s">Decoração</a>
+          <a href="roupas.html" style="animation-delay: 0.4s">Roupas</a>
+          <a href="luzes.html" style="animation-delay: 0.5s">Luzes</a>
+          <a href="guirlandas.html" style="animation-delay: 0.6s">Guirlandas</a>
+          <a href="presepios.html" style="animation-delay: 0.7s">Presépios</a>
+        </nav>
+        <script>
+          const toggleMenu = () => document.body.classList.toggle("open");
+        </script>
+      </div>
+    </header>
+
+    <section class="presentes-container">
+        <div class="hero-section">
+            <h1>Presentes de Natal</h1>
+            <p>Encontre o presente perfeito para todos da sua lista! De crianças a adultos, temos opções especiais</p>
+        </div>
+
+        <!-- Filtros por Categoria -->
+        <div class="filtros-categoria">
+            <button class="filtro-btn ativo" data-categoria="todos">Todos os Presentes</button>
+            <button class="filtro-btn" data-categoria="criancas">Para Crianças</button>
+            <button class="filtro-btn" data-categoria="homens">Para Homens</button>
+            <button class="filtro-btn" data-categoria="mulheres">Para Mulheres</button>
+            <button class="filtro-btn" data-categoria="familia">Para a Família</button>
+        </div>
+
+        <h2 class="section-title">Presentes em Destaque</h2>
+
+        <div class="produtos-grid">
+            <!-- Presente 1 - Para Crianças -->
+            <div class="produto-card" data-categoria="criancas">
+                <div class="produto-imagem">
+                    <img src="https://m.media-amazon.com/images/I/81RFsejGrjL.jpg" alt="Kit de Construção Infantil">
+                </div>
+                <div class="produto-info">
+                    <h3>Kit de Construção Criativa 200 peças</h3>
+                    <p>Blocos de montar coloridos para desenvolver a criatividade das crianças</p>
+                    <div class="produto-preco">R$ 89,90</div>
+                    <button class="btn-comprar">Presentear</button>
+                </div>
+                <div class="destaque-tag">Educativo</div>
+            </div>
+
+            <!-- Presente 2 - Para Homens -->
+            <div class="produto-card" data-categoria="homens">
+                <div class="produto-imagem">
+                    <img src="https://m.media-amazon.com/images/I/71YSBB+lxAL.jpg" alt="Kit Churrasco Premium">
+                </div>
+                <div class="produto-info">
+                    <h3>Kit Churrasco Premium 8 peças</h3>
+                    <p>Faca, garfo, espeto e acessórios em aço inox - Presente perfeito</p>
+                    <div class="produto-preco oferta">
+                        <span class="preco-original">R$ 199,90</span>
+                        <span class="preco-promocional">R$ 159,90</span>
+                    </div>
+                    <button class="btn-comprar">Presentear</button>
+                </div>
+                <div class="promocao-tag">-20%</div>
+            </div>
+
+            <!-- Presente 3 - Para Mulheres -->
+            <div class="produto-card" data-categoria="mulheres">
+                <div class="produto-imagem">
+                    <img src="https://images.elle.com.br/2023/12/Kits-de-Natal_Fenty-Beauty-620x620.jpeg" alt="Kit Cosméticos Natalino">
+                </div>
+                <div class="produto-info">
+                    <h3>Kit Cosméticos Natalino Premium</h3>
+                    <p>Perfume, cremes e essências com fragrância especial de Natal</p>
+                    <div class="produto-preco">R$ 129,90</div>
+                    <button class="btn-comprar">Presentear</button>
+                </div>
+                <div class="destaque-tag">Mais Vendido</div>
+            </div>
+
+            <!-- Presente 4 - Para a Família -->
+            <div class="produto-card" data-categoria="familia">
+                <div class="produto-imagem">
+                    <img src="https://lojagrow.vtexassets.com/arquivos/ids/173988/04846_GROW_QC1500_Noite_Feliz_Verso.jpg?v=638954575092430000" alt="Jogo de Tabuleiro Familiar">
+                </div>
+                <div class="produto-info">
+                    <h3>Jogo de Tabuleiro "Noite Feliz"</h3>
+                    <p>Diversão garantida para toda a família nas festas de fim de ano</p>
+                    <div class="produto-preco">R$ 79,90</div>
+                    <button class="btn-comprar">Presentear</button>
+                </div>
+            </div>
+
+            <!-- Presente 5 - Para Crianças -->
+            <div class="produto-card" data-categoria="criancas">
+                <div class="produto-imagem">
+                    <img src="https://m.media-amazon.com/images/I/61PLR7S5t9L.jpg" alt="Urso de Pelúcia Gigante">
+                </div>
+                <div class="produto-info">
+                    <h3>Urso de Pelúcia Gigante 1,5m</h3>
+                    <p>O companheiro perfeito para as noites de inverno - super fofinho!</p>
+                    <div class="produto-preco oferta">
+                        <span class="preco-original">R$ 149,90</span>
+                        <span class="preco-promocional">R$ 119,90</span>
+                    </div>
+                    <button class="btn-comprar">Presentear</button>
+                </div>
+                <div class="promocao-tag">-20%</div>
+            </div>
+
+            <!-- Presente 6 - Para Homens -->
+            <div class="produto-card" data-categoria="homens">
+                <div class="produto-imagem">
+                    <img src="https://cdn.awsli.com.br/600x1000/1109/1109223/produto/41003488/jogo-de-soquetes-lorben-gt541-1-59i7ywz4n1.jpg" alt="Kit Ferramentas Básicas">
+                </div>
+                <div class="produto-info">
+                    <h3>Kit Ferramentas 32 peças</h3>
+                    <p>Perfecto para pequenos reparos em casa - qualidade profissional</p>
+                    <div class="produto-preco">R$ 189,90</div>
+                    <button class="btn-comprar">Presentear</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Presentes por Faixa de Preço -->
+        <div class="ofertas-especiais">
+            <h2 class="section-title">Presentes por Faixa de Preço</h2>
+            
+            <div class="faixas-preco">
+                <div class="faixa-item">
+                    <h3>Até R$ 50</h3>
+                    <p>Presentes criativos e acessíveis</p>
+                    <div class="produtos-grid mini-grid">
+                        <!-- Mini produto 1 -->
+                        <div class="produto-card mini">
+                            <div class="produto-imagem">
+                                <img src="https://m.media-amazon.com/images/I/71Erssry2nL._AC_UF894,1000_QL80_.jpg" alt="Caneca Personalizada">
+                            </div>
+                            <div class="produto-info">
+                                <h3>Caneca Natalina</h3>
+                                <div class="produto-preco">R$ 29,90</div>
+                            </div>
+                        </div>
+                        <!-- Mini produto 2 -->
+                        <div class="produto-card mini">
+                            <div class="produto-imagem">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs8DYU1eOEXFXMP_RN_TXeDKrkyx9hNanG0g&s" alt="Chocolate Premium">
+                            </div>
+                            <div class="produto-info">
+                                <h3>Chocolate Artesanal</h3>
+                                <div class="produto-preco">R$ 24,90</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faixa-item">
+                    <h3>R$ 50 - R$ 150</h3>
+                    <p>Presentes especiais com ótimo custo-benefício</p>
+                    <div class="produtos-grid mini-grid">
+                        <!-- Mini produto 1 -->
+                        <div class="produto-card mini">
+                            <div class="produto-imagem">
+                                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRNvopDyyFWbbixVHizZPZj7f11oW9IUdlL93rSNMVH2rGPRrmD3__MymBlSsJ5WYYDCULCUSNJCXm9FC4-PnFk7r2Xytpwt6NjLWtv_wk47kBiyE7UdyOLnUk" alt="Caneca Personalizada">
+                            </div>
+                            <div class="produto-info">
+                                <h3>Par de Meias Natalina</h3>
+                                <div class="produto-preco">R$ 64,90</div>
+                            </div>
+                        </div>
+                        <!-- Mini produto 2 -->
+                        <div class="produto-card mini">
+                            <div class="produto-imagem">
+                                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQrCyL6ZGb9WQ2ioTA65B_ZeXycNwYjFrx35effGsIVtUF133Z7HsfZvhgf_-C-yETF29J_Z3d8xLvLiJn7xjCGVJAHUBO7C7oU85oh3h5L4PaRbpLVzVrYJw" alt="Chocolate Premium">
+                            </div>
+                            <div class="produto-info">
+                                <h3>Cestinha de natal</h3>
+                                <div class="produto-preco">R$ 54,50</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faixa-item">
+                    <h3>Acima de R$ 150</h3>
+                    <p>Presentes premium e sofisticados</p>
+                    <div class="produtos-grid mini-grid">
+                        <!-- Mini produto 1 -->
+                        <div class="produto-card mini">
+                            <div class="produto-imagem">
+                                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR1MJdMyEtV7ezCWtAnxL19bjRFFUoGnMSJayurLZ6ZAFxlBa3mMcHIuqwl1WijFqELdn-MsX-7GR8B07mvBLX4oWSbhGT9WQRFZvOV7sif5PSmJ9hLZ-Pl" alt="Caneca Personalizada">
+                            </div>
+                            <div class="produto-info">
+                                <h3>Floratta Gold</h3>
+                                <div class="produto-preco">R$ 160,00</div>
+                            </div>
+                        </div>
+                        <!-- Mini produto 2 -->
+                        <div class="produto-card mini">
+                            <div class="produto-imagem">
+                                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRPkyZzWk4xM_q3WNmwqnzXvRJnBW99KBvmfSrDBw3Ps_cAzH3pIAIipe7c8CHBiHvP8N06Ugpv3NqChWpwH4GdSuqa3S4MftwNgO3ZQhV_y59l-PepvUr3iw" alt="Chocolate Premium">
+                            </div>
+                            <div class="produto-info">
+                                <h3>Sonhos de Natal</h3>
+                                <div class="produto-preco">R$ 250,90</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Dicas -->
+        <div class="dicas-presentes">
+            <h3>Dicas para Escolher o Presente Perfeito</h3>
+            <div class="dicas-grid">
+                <div class="dica-item">
+                    <h4>🎁 Para Crianças</h4>
+                    <p>Prefira brinquedos educativos que estimulem a criatividade e desenvolvimento.</p>
+                </div>
+                <div class="dica-item">
+                    <h4>👨 Para Homens</h4>
+                    <p>Itens práticos como kits de ferramentas ou acessórios tecnológicos são sempre bem-vindos.</p>
+                </div>
+                <div class="dica-item">
+                    <h4>👩 Para Mulheres</h4>
+                    <p>Cosméticos, acessórios e itens de decoração pessoal são excelentes opções.</p>
+                </div>
+                <div class="dica-item">
+                    <h4>👪 Para a Família</h4>
+                    <p>Jogos, livros e itens para momentos em conjunto fortalecem os laços familiares.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Embalagem -->
+        <div class="embalagem-especial">
+            <div class="embalagem-content">
+                <h3>Embalagem de Natal Grátis! 🎀</h3>
+                <p>Todos os nossos presentes incluem embalagem especial natalina sem custo adicional. Deixe seu presente ainda mais especial!</p>
+                <div class="embalagem-destaque">
+                    <span>+ Papel de Presente Premium</span>
+                    <span>+ Tag Personalizada</span>
+                    <span>+ Laço Vermelho</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-natalino">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 id="footer-logo">Departal</h3>
+                    <p>Encontre o presente perfeito para quem você ama! Entrega rápida e garantida.</p>
+                    <button id="btn-topo-footer" class="btn-topo-footer">↑ Voltar ao Topo</button>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                       <ul>
+                        <li><a href="home.html">Início</a></li>
+                        <li><a href="Sobre.html">Sobre Nós</a></li>
+                        <li><a href="Contato.html">Contato</a></li>
+                        <li><a href="decoracao.html">Decorações</a></li>
+                        <li><a href="roupas.html">Roupas</a></li>
+                        <li><a href="luzes.html">Luzes</a></li>
+                        <li><a href="guirlandas.html">Guirlandas</a></li>
+                        <li><a href="presepios.html">Presépios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#">Embalagem para Presente</a></li>
+                        <li><a href="#">Cartão de Mensagem</a></li>
+                        <li><a href="#">Entrega Expressa</a></li>
+                        <li><a href="#">Troca e Devolução</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter Presentes</h4>
+                    <p>Receba ideias de presentes e ofertas exclusivas!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu email" required>
+                        <button type="submit">🎁</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Departal | Feliz Natal e Boas Compras!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filtros de categoria
+        document.addEventListener('DOMContentLoaded', function() {
+            const filtroBtns = document.querySelectorAll('.filtro-btn');
+            const produtoCards = document.querySelectorAll('.produto-card');
+            
+            filtroBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove classe ativa de todos os botões
+                    filtroBtns.forEach(b => b.classList.remove('ativo'));
+                    // Adiciona classe ativa ao botão clicado
+                    this.classList.add('ativo');
+                    
+                    const categoria = this.getAttribute('data-categoria');
+                    
+                    // Filtra os produtos
+                    produtoCards.forEach(card => {
+                        if (categoria === 'todos' || card.getAttribute('data-categoria') === categoria) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Voltar ao topo
+            document.getElementById('btn-topo-footer').addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

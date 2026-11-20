@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/style_roupas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/Departal - fivecom.png">
+    <title>Departal - Roupas de Natal</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <img src="../images/logo - site.png" alt="Departal - Sua Loja de Departamento" id="logo">
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Início</a></li>
+          <li><a href="Sobre.html">Sobre Nós</a></li>
+          <li><a href="Contato.html">Contato</a></li>
+        </ul>
+        <!-- BURGER -->
+        <button class="burger" onclick="toggleMenu()">
+          <span class="burger-icon"></span>
+        </button>
+      </nav>
+      <!-- MENU FORA DA NAVBAR -->
+      <div class="menu">
+        <nav>
+          <a href="decoracao.html" style="animation-delay: 0.3s">Decoração</a>
+          <a href="presentes.html" style="animation-delay: 0.4s">Presentes</a>
+          <a href="luzes.html" style="animation-delay: 0.5s">Luzes</a>
+          <a href="guirlandas.html" style="animation-delay: 0.6s">Guirlandas</a>
+          <a href="presepios.html" style="animation-delay: 0.7s">Presépios</a>
+        </nav>
+        <script>
+          const toggleMenu = () => document.body.classList.toggle("open");
+        </script>
+      </div>
+    </header>
+
+    <section class="roupas-container">
+        <div class="hero-section">
+            <h1>Roupas de Natal</h1>
+            <p>Vista o espírito natalino! Encontre looks perfeitos para as festas de fim de ano</p>
+        </div>
+
+        <!-- Filtros por Categoria -->
+        <div class="filtros-categoria">
+            <button class="filtro-btn ativo" data-categoria="todos">Todas as Roupas</button>
+            <button class="filtro-btn" data-categoria="adultos">Para Adultos</button>
+            <button class="filtro-btn" data-categoria="criancas">Para Crianças</button>
+            <button class="filtro-btn" data-categoria="familia">Conjuntos Familiares</button>
+            <button class="filtro-btn" data-categoria="acessorios">Acessórios</button>
+        </div>
+
+        <h2 class="section-title">Coleção Natalina</h2>
+
+        <div class="produtos-grid">
+            <!-- Roupa 1 - Adultos -->
+            <div class="produto-card" data-categoria="adultos">
+                <div class="produto-imagem">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQynX4UdeGf-McNq2zWL62COgIUoZIJe-MYh0M4RKlYKaHTiFgPfIFZ992A-M-6zSQl2ay4lWxffGY5ShjaYucVqb759lLoCp8s4cK293u-3h2t_j1OGdUQyg" alt="Pijama Natalino Adulto">
+                </div>
+                <div class="produto-info">
+                    <h3>Pijama Natalino Premium</h3>
+                    <p>Conforto e estilo para as noites de Natal - disponível em vários tamanhos</p>
+                    <div class="tamanhos">
+                        <span class="tamanho">P</span>
+                        <span class="tamanho">M</span>
+                        <span class="tamanho">G</span>
+                        <span class="tamanho">GG</span>
+                    </div>
+                    <div class="produto-preco">R$ 89,90</div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+                <div class="destaque-tag">Conforto</div>
+            </div>
+
+            <!-- Roupa 2 - Crianças -->
+            <div class="produto-card" data-categoria="criancas">
+                <div class="produto-imagem">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSGMwa7MaRmsjTfDUY7ctux7zYyPkGgDiB94J3RmEjKXfGTEWMW04-rAQGW4u1b7q0HB5ovr_8BOzr7D6wvneQ-Qe4UYNgrs4wup0yXSiqEeQj6vQBOw-0Geg&usqp=CAc" alt="Vestido Natalino Infantil">
+                </div>
+                <div class="produto-info">
+                    <h3>Vestido Natalino Infantil</h3>
+                    <p>Perfeito para a festa da escola e ceia de Natal - meninas 2 a 10 anos</p>
+                    <div class="tamanhos">
+                        <span class="tamanho">2-4</span>
+                        <span class="tamanho">6-8</span>
+                        <span class="tamanho">10-12</span>
+                    </div>
+                    <div class="produto-preco oferta">
+                        <span class="preco-original">R$ 79,90</span>
+                        <span class="preco-promocional">R$ 59,90</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+                <div class="promocao-tag">-25%</div>
+            </div>
+
+            <!-- Roupa 3 - Família -->
+            <div class="produto-card" data-categoria="familia">
+                <div class="produto-imagem">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRF3YKapVltwzfiCC_hmKo8WILxk7SqQD7fY-q2Xim80T5w7AEPdTAd_7r1tTYa9BjSYE_7jJYMp-Wo9bZ8G57AbT_PtWOStGzT9vDyu4vWB6x3l8kRCOCy8nQ" alt="Conjunto Familiar Natalino">
+                </div>
+                <div class="produto-info">
+                    <h3>Conjunto Familiar Matching</h3>
+                    <p>Pijamas combinando para papai, mamãe e crianças - família toda igual!</p>
+                    <div class="tamanhos">
+                        <span class="tamanho">Kit Família</span>
+                    </div>
+                    <div class="produto-preco">R$ 249,90</div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+                <div class="destaque-tag">Família</div>
+            </div>
+
+            <!-- Roupa 4 - Adultos -->
+            <div class="produto-card" data-categoria="adultos">
+                <div class="produto-imagem">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS6JYEBa7Lbd55nhr5cAfHVrSxZbsDvE0j5bwxb0n79MsI_gyjBHGqr8d27hcrwEj6eUYg7D7UccESBUsJ7tTXh-aKW6PvjD_9HXCSDftr0H0AEKpcNouGb3gHv1yac2WZXJ6LUEGXnaw&usqp=CAc" alt="Camiseta Natalina">
+                </div>
+                <div class="produto-info">
+                    <h3>Camiseta "Feliz Natal"</h3>
+                    <p>Estilo casual para os dias festivos - 100% algodão</p>
+                    <div class="tamanhos">
+                        <span class="tamanho">P</span>
+                        <span class="tamanho">M</span>
+                        <span class="tamanho">G</span>
+                        <span class="tamanho">GG</span>
+                    </div>
+                    <div class="produto-preco">R$ 49,90</div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- Roupa 5 - Acessórios -->
+            <div class="produto-card" data-categoria="acessorios">
+                <div class="produto-imagem">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS09KJRMtz12NFIpzHIBZJm3gDJuUo_cGTVV-Te76Evg050g4J11etPsR6GlVvuQHbpYAdUksPGDHsJUQMQAv04tVB7DTvxq17UCtdqtsay" alt="Meias Natalinas">
+                </div>
+                <div class="produto-info">
+                    <h3>Kit Meias Natalinas 3 pares</h3>
+                    <p>Meias temáticas para presentear ou usar na noite de Natal</p>
+                    <div class="produto-preco oferta">
+                        <span class="preco-original">R$ 45,90</span>
+                        <span class="preco-promocional">R$ 34,90</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+                <div class="promocao-tag">-24%</div>
+            </div>
+
+            <!-- Roupa 6 - Crianças -->
+            <div class="produto-card" data-categoria="criancas">
+                <div class="produto-imagem">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTKdtti_IxN7PdYhT9AHsrDG72_TPSPD7qtdhPrt5v3HVnMKGzCOY8nYIOm8Jpo04wZjFDR7BVHE03LRmrJkgJP8LLqG2SSsvqWWhLzu0qbyAHgNrT36omxeg" alt="Conjunto Infantil Noel">
+                </div>
+                <div class="produto-info">
+                    <h3>Conjunto Infantil Papai Noel</h3>
+                    <p>Fantasia completa para as crianças - inclui gorro e cinto</p>
+                    <div class="tamanhos">
+                        <span class="tamanho">3-4</span>
+                        <span class="tamanho">5-6</span>
+                        <span class="tamanho">7-8</span>
+                    </div>
+                    <div class="produto-preco">R$ 99,90</div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Looks Completos -->
+        <div class="ofertas-especiais">
+            <h2 class="section-title">Looks Completos</h2>
+            
+            <div class="looks-grid">
+                <div class="look-item">
+                    <div class="look-imagem">
+                        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRt_QjzTAyqPlPKUKfMgVd5bPEM2xjP5TMCBrQPiODprbotKMw187KJjbsoPn7CZVNGvxy4hZRG9nVNMO0-JUeHKCKABr34QG_QhQQxjXNUz6m4bWdJz8WzCw" alt="Look Festivo Feminino">
+                    </div>
+                    <div class="look-info">
+                        <h3>Look Festivo Feminino</h3>
+                        <p>Vestido vermelho + acessórios dourados</p>
+                        <div class="look-preco">R$ 189,90</div>
+                        <button class="btn-comprar">Comprar Conjunto</button>
+                    </div>
+                </div>
+                
+                <div class="look-item">
+                    <div class="look-imagem">
+                        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSlNYsQnGiOYAR_RVaRWW9vSjrsOfL2GcZqdNRUVrYL_gTni7soP2HckgDVFtyvcv_H6EyPLFEdU9PSM0i4NA5PAyEFZlFOxCYN5bcS7dW42h_b_n5M40uR" alt="Look Familiar">
+                    </div>
+                    <div class="look-info">
+                        <h3>Look Familiar Completo</h3>
+                        <p>Pijamas matching para 4 pessoas</p>
+                        <div class="look-preco">R$ 329,90</div>
+                        <button class="btn-comprar">Comprar Conjunto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Guia de Tamanhos -->
+        <div class="guia-tamanhos">
+            <h3>📏 Guia de Tamanhos</h3>
+            <div class="tabela-tamanhos">
+                <div class="tabela-coluna">
+                    <h4>Adultos</h4>
+                    <table>
+                        <tr>
+                            <th>Tamanho</th>
+                            <th>Busto</th>
+                            <th>Cintura</th>
+                        </tr>
+                        <tr>
+                            <td>P</td>
+                            <td>84-88 cm</td>
+                            <td>64-68 cm</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>88-92 cm</td>
+                            <td>68-72 cm</td>
+                        </tr>
+                        <tr>
+                            <td>G</td>
+                            <td>92-96 cm</td>
+                            <td>72-76 cm</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tabela-coluna">
+                    <h4>Crianças</h4>
+                    <table>
+                        <tr>
+                            <th>Idade</th>
+                            <th>Altura</th>
+                            <th>Peso</th>
+                        </tr>
+                        <tr>
+                            <td>2-4 anos</td>
+                            <td>92-104 cm</td>
+                            <td>12-16 kg</td>
+                        </tr>
+                        <tr>
+                            <td>5-6 anos</td>
+                            <td>104-116 cm</td>
+                            <td>16-21 kg</td>
+                        </tr>
+                        <tr>
+                            <td>7-8 anos</td>
+                            <td>116-128 cm</td>
+                            <td>21-26 kg</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Dicas de Estilo -->
+        <div class="dicas-estilo">
+            <h3>🎄 Dicas de Estilo Natalino</h3>
+            <div class="dicas-grid">
+                <div class="dica-item">
+                    <h4>Para a Ceia</h4>
+                    <p>Opte por roupas confortáveis mas elegantes - vestidos fluidos ou camisas sociais.</p>
+                </div>
+                <div class="dica-item">
+                    <h4>Cores Festivas</h4>
+                    <p>Vermelho, verde, dourado e prateado são sempre bem-vindos nas festas.</p>
+                </div>
+                <div class="dica-item">
+                    <h4>Conforto em Primeiro</h4>
+                    <p>Priorize tecidos respiráveis para horas de celebração em família.</p>
+                </div>
+                <div class="dica-item">
+                    <h4>Looks Combinando</h4>
+                    <p>Crie momentos especiais com roupas familiares que combinam entre si.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Entrega Rápida -->
+        <div class="entrega-rapida">
+            <div class="entrega-content">
+                <h3>🚚 Entrega Expressa para o Natal!</h3>
+                <p>Garanta suas roupas natalinas a tempo das festas. Entrega em até 2 dias úteis!</p>
+                <div class="entrega-destaque">
+                    <span>✓ Entregamos antes do Natal</span>
+                    <span>✓ Troca Grátis</span>
+                    <span>✓ Tamanhos Especiais</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-natalino">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 id="footer-logo">Departal</h3>
+                    <p>Vista o espírito natalino com nossas coleções especiais! Qualidade e conforto garantidos.</p>
+                    <button id="btn-topo-footer" class="btn-topo-footer">↑ Voltar ao Topo</button>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                       <ul>
+                        <li><a href="home.html">Início</a></li>
+                        <li><a href="Sobre.html">Sobre Nós</a></li>
+                        <li><a href="Contato.html">Contato</a></li>
+                        <li><a href="decoracao.html">Decorações</a></li>
+                        <li><a href="presentes.html">Presentes</a></li>
+                        <li><a href="luzes.html">Luzes</a></li>
+                        <li><a href="guirlandas.html">Guirlandas</a></li>
+                        <li><a href="presepios.html">Presépios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Serviços Moda</h4>
+                    <ul>
+                        <li><a href="#">Guia de Tamanhos</a></li>
+                        <li><a href="#">Troca de Tamanho</a></li>
+                        <li><a href="#">Consultoria de Estilo</a></li>
+                        <li><a href="#">Presente em Dobro</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter Moda</h4>
+                    <p>Receba novidades de moda natalina e promoções exclusivas!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu email" required>
+                        <button type="submit">👗</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Departal | Estilo e Conforto para seu Natal!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filtros de categoria para roupas
+        document.addEventListener('DOMContentLoaded', function() {
+            const filtroBtns = document.querySelectorAll('.filtro-btn');
+            const produtoCards = document.querySelectorAll('.produto-card');
+            
+            filtroBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove classe ativa de todos os botões
+                    filtroBtns.forEach(b => b.classList.remove('ativo'));
+                    // Adiciona classe ativa ao botão clicado
+                    this.classList.add('ativo');
+                    
+                    const categoria = this.getAttribute('data-categoria');
+                    
+                    // Filtra os produtos
+                    produtoCards.forEach(card => {
+                        if (categoria === 'todos' || card.getAttribute('data-categoria') === categoria) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Seleção de tamanhos
+            const tamanhos = document.querySelectorAll('.tamanho');
+            tamanhos.forEach(tamanho => {
+                tamanho.addEventListener('click', function() {
+                    // Remove seleção de todos os tamanhos no mesmo produto
+                    const todosTamanhos = this.parentElement.querySelectorAll('.tamanho');
+                    todosTamanhos.forEach(t => t.classList.remove('selecionado'));
+                    
+                    // Adiciona seleção ao tamanho clicado
+                    this.classList.add('selecionado');
+                });
+            });
+            
+            // Voltar ao topo
+            document.getElementById('btn-topo-footer').addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

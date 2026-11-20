@@ -1,0 +1,765 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/imagem_parallax.png");
+
+  /* Ocupa toda a altura da viewport */
+  height: 91vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Posiciona atrás da navbar */
+  position: relative;
+  z-index: 1;
+
+  /* Centraliza verticalmente e alinha à esquerda */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+  /* Adiciona padding na esquerda para afastar do canto */
+  padding-left: 150px;
+}
+
+/* Estilos para os textos dentro do parallax */
+.parallax p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem; /*para aumentar o tamanho*/
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+#nome_Departal {
+  color: rgb(209, 30, 30);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+/* Estilo para o botão */
+.parallax button {
+  background-color: #A60D1A;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.parallax button:hover {
+  background-color: #8a0b16;
+}
+
+#imagem_destaque {
+  background-image: url("../images/imagem natalina.png");
+  min-height: 300px; /* Altura mínima, cresce conforme conteúdo */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 60px 40px; /* Mais padding vertical */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-destaque {
+  /* Posiciona o texto absolutamente dentro do container */
+  position: absolute;
+  
+  /* Centraliza verticalmente */
+  top: 50%;
+  
+  /* Move o texto 50% para a direita */
+  left: 50%;
+  
+  /* Translada -50% em ambos os eixos para centralizar perfeitamente */
+  transform: translate(-50%, -50%);
+  
+  /* Cor do texto */
+  color: rgb(0, 0, 0);
+  
+  /* Alinha o texto ao centro */
+  text-align: center;
+  
+  /* Largura máxima do bloco de texto */
+  max-width: 800px;
+}
+
+.texto-destaque h2 {
+  font-family: agrandir;
+  
+  /* Tamanho da fonte - 2.5 vezes o tamanho base */
+  font-size: 2.5rem;
+  
+  /* Peso da fonte - semi-negrito */
+  font-weight: 600;
+  
+  /* Sombra no texto para melhor legibilidade */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  
+  /* Espaçamento abaixo do título */
+  margin-bottom: 20px;
+}
+
+.textos {
+  padding: 50px;
+  background-color: rgb(5, 136, 5);
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.6;
+   color: rgb(0, 0, 0);
+        }
+            
+#p {
+  margin-bottom: 20px;
+}
+
+/* Seção de Promoções */
+.promocoes {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.titulo-promocoes {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #A60D1A;
+  margin-bottom: 15px;
+}
+
+.subtitulo-promocoes {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* Grid de Produtos */
+.grid-promocoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* Card de Promoção */
+.card-promocao {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card-promocao:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Badge de Desconto */
+.badge-desconto {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #A60D1A;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  z-index: 2;
+}
+
+/* Imagem do Produto */
+.imagem-produto {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* Informações do Produto */
+.info-produto {
+  padding: 20px;
+}
+
+.info-produto h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.descricao {
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* Preços */
+.precos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.preco-antigo {
+  font-family: 'Montserrat', sans-serif;
+  color: #999;
+  text-decoration: line-through;
+  font-size: 0.9rem;
+}
+
+.preco-novo {
+  font-family: 'Montserrat', sans-serif;
+  color: #A60D1A;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* Botões */
+.btn-comprar {
+  width: 100%;
+  background: #828941;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background: #6c7535;
+}
+
+.btn-ver-mais {
+  background: transparent;
+  color: #A60D1A;
+  border: 2px solid #A60D1A;
+  padding: 15px 40px;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-ver-mais:hover {
+  background: #A60D1A;
+  color: white;
+}
+
+.ver-mais-container {
+  text-align: center;
+}
+
+/* Elementos Natalinos Decorativos */
+.elementos-natal {
+  position: relative;
+  z-index: 1;
+}
+
+.enfeite-natal {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.7;
+  animation: flutuar 3s ease-in-out infinite;
+  z-index: 1;
+}
+
+.enfeite-1 {
+  top: 10%;
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.enfeite-2 {
+  top: 20%;
+  right: 20%;
+  animation-delay: 0.5s;
+}
+
+.enfeite-3 {
+  bottom: 50%;
+  left: 30%;
+  animation-delay: 1s;
+}
+
+.enfeite-4 {
+  bottom: 15%;
+  right: 5%;
+  animation-delay: 1.5s;
+}
+
+.enfeite-5 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 2s;
+}
+
+@keyframes flutuar {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Adiciona bolinhas natalinas no fundo */
+.textos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(255,255,255,0.1) 2px, transparent 0),
+    radial-gradient(circle at 90% 30%, rgba(255,255,255,0.1) 3px, transparent 0),
+    radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 2px, transparent 0),
+    radial-gradient(circle at 80% 70%, rgba(255,255,255,0.1) 3px, transparent 0);
+  background-size: 200px 200px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Footer */
+.footer-natalino {
+  background: linear-gradient(135deg, #1a5a1a 0%, #0d3d0d 100%);
+  color: white;
+  padding: 50px 20px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+#footer-logo {
+  color: rgb(209, 30, 30);
+}
+
+.footer-natalino::before {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  opacity: 0.3;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-section h3 {
+  color: #ffd700;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer-section h4 {
+  color: #ffd700;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffd700;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.newsletter-form button {
+  background: #A60D1A;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+  background: #8a0b16;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+  }
+  
+  .newsletter-form input,
+  .newsletter-form button {
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+/* Botão Voltar ao Topo no Footer */
+.btn-topo-footer {
+  background: linear-gradient(135deg, #A60D1A 0%, #8a0b16 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  box-shadow: 0 4px 15px rgba(166, 13, 26, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-topo-footer:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(166, 13, 26, 0.4);
+  background: linear-gradient(135deg, #8a0b16 0%, #A60D1A 100%);
+}
+
+.btn-topo-footer:active {
+  transform: translateY(-1px);
+}
+
+/* responsividade */
+
+@media (max-width: 1200px) {
+  .parallax {
+    padding-left: 100px;
+  }
+  
+  .parallax p {
+    font-size: 2.5rem;
+  }
+  
+  #nome_Departal {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .parallax {
+    padding-left: 80px;
+    height: 80vh;
+  }
+  
+  .parallax p {
+    font-size: 2rem;
+  }
+  
+  #nome_Departal {
+    font-size: 3.5rem;
+  }
+  
+  .parallax button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+  }
+  
+  .texto-destaque h2 {
+    font-size: 2rem;
+  }
+  
+  .titulo-promocoes {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .parallax {
+    padding-left: 40px;
+    height: 70vh;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .parallax p {
+    font-size: 1.8rem;
+  }
+  
+  #nome_Departal {
+    font-size: 3rem;
+  }
+  
+  .texto-destaque {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    padding: 20px;
+  }
+  
+  .texto-destaque h2 {
+    font-size: 1.6rem;
+  }
+  
+  .textos {
+    padding: 30px 20px;
+    font-size: 1.1rem;
+  }
+  
+  .promocoes {
+    padding: 50px 15px;
+  }
+  
+  .grid-promocoes {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .titulo-promocoes {
+    font-size: 1.8rem;
+  }
+  
+  .subtitulo-promocoes {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .enfeite-natal {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .parallax {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 60vh;
+  }
+  
+  .parallax p {
+    font-size: 1.5rem;
+  }
+  
+  #nome_Departal {
+    font-size: 2.5rem;
+  }
+  
+  .parallax button {
+    padding: 10px 25px;
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+  
+  .texto-destaque h2 {
+    font-size: 1.3rem;
+  }
+  
+  .textos {
+    padding: 25px 15px;
+    font-size: 1rem;
+  }
+  
+  .promocoes {
+    padding: 40px 10px;
+  }
+  
+  .grid-promocoes {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .card-promocao {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  
+  .titulo-promocoes {
+    font-size: 1.6rem;
+  }
+  
+  .subtitulo-promocoes {
+    font-size: 1rem;
+  }
+  
+  .info-produto {
+    padding: 15px;
+  }
+  
+  .info-produto h3 {
+    font-size: 1.2rem;
+  }
+  
+  .preco-novo {
+    font-size: 1.2rem;
+  }
+  
+  .btn-ver-mais {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+  
+  .footer-natalino {
+    padding: 30px 15px 15px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.3rem;
+  }
+  
+  .footer-section h4 {
+    font-size: 1.1rem;
+  }
+  
+  .enfeite-natal {
+    font-size: 1.2rem;
+  }
+  
+  /* Esconde alguns elementos decorativos em mobile muito pequeno */
+  .enfeite-2, .enfeite-4 {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .parallax {
+    height: 50vh;
+  }
+  
+  .parallax p {
+    font-size: 1.3rem;
+  }
+  
+  #nome_Departal {
+    font-size: 2rem;
+  }
+  
+  .texto-destaque h2 {
+    font-size: 1.1rem;
+  }
+  
+  .grid-promocoes {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-promocao {
+    max-width: 100%;
+  }
+}
+
+/* Ajustes para landscape em mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .parallax {
+    height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .parallax p {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  #nome_Departal {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+  
+  .parallax button {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+}

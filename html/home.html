@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_home.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/Departal - fivecom.png">
+    <title>Departal - Sua Loja de Departamento</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <img src="../images/logo - site.png" alt="Departal - Sua Loja de Departamento" id="logo">
+        </div>
+        <ul class="nav-links">
+         <li><a href="Sobre.html">Sobre Nós</a></li>
+          <li><a href="Contato.html">Contato</a></li>
+       </ul>
+    <!-- BURGER -->
+       <button class="burger" onclick="toggleMenu()">
+         <span class="burger-icon"></span>
+        </button>
+      </nav>
+    <!-- MENU FORA DA NAVBAR -->
+      <div class="menu">
+        <nav>
+          <a href="decoracao.html" style="animation-delay: 0.2s">Decoração</a>
+          <a href="presentes.html" style="animation-delay: 0.3s">Presente</a>
+          <a href="roupas.html" style="animation-delay: 0.4s">Roupas</a>
+          <a href="luzes.html" style="animation-delay: 0.5s">Luzes</a>
+          <a href="guirlandas.html" style="animation-delay: 0.6s">Guirlandas</a>
+          <a href="presepios.html" style="animation-delay: 0.7s">Presépios</a>
+        </nav>
+        <script>
+          const toggleMenu = () => document.body.classList.toggle("open");
+        </script>
+      </div>
+    </header>
+
+
+    <section>
+      <!-- Container element -->
+      <div class="parallax">
+        <p>Seja bem-vindo a loja</p>
+        <p id="nome_Departal">Departal</p>
+        <a href="Sobre.html"><button>Saiba mais</button></a>
+      </div>
+
+      <div id="imagem_destaque">
+        <div class="texto-destaque">
+          <h2>A magia do Natal começa aqui na Departal, pois lembre-se: os presentes mais desejados estão aqui, 
+            e o Papai Noel aprova!</h2>
+        </div>
+      </div>
+
+      <div class="textos">
+        <section class="promocoes">
+    <div class="container">
+      <h2 class="titulo-promocoes">Principais ofertas e promoções</h2>
+      <p class="subtitulo-promocoes">Aproveite nossos melhores preços para celebrar com um sorriso ainda maior</p>
+    
+      <div class="grid-promocoes">
+      
+        <!-- Produto 1 -->
+        <div class="card-promocao">
+          <div class="badge-desconto">-30%</div>
+          <img src="../images/kit decoracao de natal.webp" alt="Decoração Natalina" class="imagem-produto">
+          <div class="info-produto">
+            <h3>Árvore de Natal e Kit</h3>
+            <p class="descricao">Árvore + enfeites</p>
+            <div class="precos">
+              <span class="preco-antigo">R$ 180,90</span>
+              <span class="preco-novo">R$ 126,63</span>
+            </div>
+           <button class="btn-comprar">Comprar Agora</button>
+         </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="card-promocao">
+          <div class="badge-desconto">-27%</div>
+          <img src="../images/caixa de presentes.webp" alt="Presente de Natal" class="imagem-produto">
+          <div class="info-produto">
+            <h3>Caixa de Presentes Premium</h3>
+            <p class="descricao">4 itens surpresa selecionados</p>
+            <div class="precos">
+              <span class="preco-antigo">R$ 49,99</span>
+              <span class="preco-novo">R$ 34,00</span>
+            </div>
+            <button class="btn-comprar">Comprar Agora</button>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="card-promocao">
+          <div class="badge-desconto">-40%</div>
+          <img src="../images/pijama.webp" alt="Roupas Natal" class="imagem-produto">
+          <div class="info-produto">
+            <h3>Pijama Natalino Unisex</h3>
+            <p class="descricao">Conjunto para dormir</p>
+            <div class="precos">
+              <span class="preco-antigo">R$ 95,90</span>
+              <span class="preco-novo">R$ 57,54</span>
+            </div>
+            <button class="btn-comprar">Comprar Agora</button>
+          </div>
+        </div>
+      </div>    
+        <div class="ver-mais-container">
+          <a href="decoracao.html"><button class="btn-ver-mais">Ver Todos os Produtos</button></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="elementos-natal">
+    <div class="enfeite-natal enfeite-1">🎄</div>
+    <div class="enfeite-natal enfeite-2">🎅</div>
+    <div class="enfeite-natal enfeite-3">⭐</div>
+    <div class="enfeite-natal enfeite-4">🔔</div>
+    <div class="enfeite-natal enfeite-5">🦌</div>
+    </div>
+    </section>
+
+    <footer class="footer-natalino">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 id="footer-logo">Departal</h3>
+        <p>Sua loja de departamento ainda mais forte com super descontos natalinos!</p>
+        <button id="btn-topo-footer" class="btn-topo-footer">↑ Voltar ao Topo</button>
+      </div>
+
+      <div class="footer-section">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="Sobre.html">Sobre Nós</a></li>
+          <li><a href="Contato.html">Contato</a></li>
+          <li><a href="decoracao.html">Decorações</a></li>
+          <li><a href="presentes.html">Presentes</a></li>
+          <li><a href="roupas.html">Roupas</a></li>
+          <li><a href="luzes.html">Luzes</a></li>
+          <li><a href="guirlandas.html">Guirlandas</a></li>
+          <li><a href="presepios.html">Presépios</a></li>
+        </ul>
+      </div>
+            
+      <div class="footer-section">
+        <h4>Newsletter</h4>
+        <p>Informe o seu e-mail e faça parte dos primeiros a receber as nossas ofertas especiais!</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Seu email" required>
+          <button type="submit">🎅</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Departal | Feliz Natal e Boas Compras!</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Função para voltar ao topo suavemente
+document.getElementById('btn-topo-footer').addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+</script>
+</body>
+</html>

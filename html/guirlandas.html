@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/style_guirlandas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/Departal - fivecom.png">
+    <title>Departal - Guirlandas de Natal</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <img src="../images/logo - site.png" alt="Departal - Sua Loja de Departamento" id="logo">
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Início</a></li>
+          <li><a href="Sobre.html">Sobre Nós</a></li>
+          <li><a href="Contato.html">Contato</a></li>
+        </ul>
+        <!-- BURGER -->
+        <button class="burger" onclick="toggleMenu()">
+          <span class="burger-icon"></span>
+        </button>
+      </nav>
+      <!-- MENU FORA DA NAVBAR -->
+      <div class="menu">
+        <nav>
+          <a href="decoracao.html" style="animation-delay: 0.3s">Decoração</a>
+          <a href="presentes.html" style="animation-delay: 0.4s">Presentes</a>
+          <a href="roupas.html" style="animation-delay: 0.5s">Roupas</a>
+          <a href="luzes.html" style="animation-delay: 0.6s">Luzes</a>
+          <a href="presepios.html" style="animation-delay: 0.7s">Presépios</a>
+        </nav>
+        <script>
+          const toggleMenu = () => document.body.classList.toggle("open");
+        </script>
+      </div>
+    </header>
+
+    <section class="guirlandas-container">
+        <div class="hero-section">
+            <h1>Guirlandas de Natal</h1>
+            <p>Dê as boas-vindas ao espírito natalino! Coroas decorativas para portas, paredes e mesas</p>
+        </div>
+
+        <!-- Filtros por Tipo -->
+        <div class="filtros-categoria">
+            <button class="filtro-btn ativo" data-categoria="todos">Todas as Guirlandas</button>
+            <button class="filtro-btn" data-categoria="porta">Para Porta</button>
+            <button class="filtro-btn" data-categoria="parede">Para Parede</button>
+            <button class="filtro-btn" data-categoria="mesa">Para Mesa</button>
+            <button class="filtro-btn" data-categoria="luminosa">Com Luzes</button>
+        </div>
+
+        <h2 class="section-title">Coleção de Guirlandas</h2>
+
+        <div class="produtos-grid">
+            <!-- Guirlanda 1 - Porta -->
+            <div class="produto-card" data-categoria="porta">
+                <div class="produto-imagem">
+                    <img src="https://crispamplona.cdn.magazord.com.br/img/2025/09/produto/3353/guirlanda-natal455.jpeg?ims=600x600" alt="Guirlanda Tradicional Vermelha">
+                </div>
+                <div class="produto-info">
+                    <h3>Guirlanda Tradicional 60cm</h3>
+                    <p>Feita com pinho natural, frutas vermelhas e laço de cetim - aroma de canela</p>
+                    <div class="especificacoes">
+                        <span class="espec">📏 60cm diâmetro</span>
+                        <span class="espec">🎀 Laço incluído</span>
+                        <span class="espec">🌲 Pinho natural</span>
+                    </div>
+                    <div class="produto-preco">R$ 79,90</div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+                <div class="destaque-tag">Tradicional</div>
+            </div>
+
+            <!-- Guirlanda 2 - Luminosa -->
+            <div class="produto-card" data-categoria="luminosa porta">
+                <div class="produto-imagem">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_606032-MLB47879705834_102021-O-guirlanda-de-natal-enfeite-luzes-de-led-50-cm-x-50-cm-luxo.webp" alt="Guirlanda com LEDs">
+                </div>
+                <div class="produto-info">
+                    <h3>Guirlanda LED 50cm</h3>
+                    <p>Com 50 pontos de luz dourada - bateria incluída (dura 30 dias)</p>
+                    <div class="especificacoes">
+                        <span class="espec">💡 50 LEDs</span>
+                        <span class="espec">🔋 Bateria</span>
+                        <span class="espec">📏 50cm</span>
+                    </div>
+                    <div class="produto-preco oferta">
+                        <span class="preco-original">R$ 129,90</span>
+                        <span class="preco-promocional">R$ 99,90</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+                <div class="promocao-tag">-23%</div>
+            </div>
+
+            <!-- Guirlanda 3 - Mesa -->
+            <div class="produto-card" data-categoria="mesa">
+                <div class="produto-imagem">
+                    <img src="https://cdn.awsli.com.br/761/761999/produto/170983216f9b1445a9d.jpg" alt="Guirlanda para Mesa">
+                </div>
+                <div class="produto-info">
+                    <h3>Mini Guirlanda 25cm</h3>
+                    <p>Perfeita para centro de mesa - com pinhas douradas e frutas cristalizadas</p>
+                    <div class="especificacoes">
+                        <span class="espec">📏 25cm</span>
+                        <span class="espec">✨ Dourado</span>
+                        <span class="espec">🏠 Interior</span>
+                    </div>
+                    <div class="produto-preco">R$ 39,90</div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+                <div class="destaque-tag">Mesa</div>
+            </div>
+
+            <!-- Guirlanda 4 - Parede -->
+            <div class="produto-card" data-categoria="parede">
+                <div class="produto-imagem">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_637400-MLB47875118329_102021-O.webp" alt="Guirlanda Rustica">
+                </div>
+                <div class="produto-info">
+                    <h3>Guirlanda Rústica 70cm</h3>
+                    <p>Estilo country com ramos secos, pinhas e corda natural - muito charme</p>
+                    <div class="especificacoes">
+                        <span class="espec">📏 70cm</span>
+                        <span class="espec">🪵 Rustica</span>
+                        <span class="espec">🎄 Natural</span>
+                    </div>
+                    <div class="produto-preco">R$ 89,90</div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- Guirlanda 5 - Luminosa -->
+            <div class="produto-card" data-categoria="luminosa parede">
+                <div class="produto-imagem">
+                    <img src="https://images.tcdn.com.br/img/img_prod/754784/guirlanda_nevada_com_luzes_de_led_45_cm_quente_natal_507_1_e3420cbff651409f64e3d743c7869b4c.jpeg" alt="Guirlanda Colorida LED">
+                </div>
+                <div class="produto-info">
+                    <h3>Guirlanda RGB 45cm</h3>
+                    <p>LEDs coloridos com 16 cores - controle remoto e timer automático</p>
+                    <div class="especificacoes">
+                        <span class="espec">🌈 16 cores</span>
+                        <span class="espec">⏰ Timer</span>
+                        <span class="espec">📱 Controle</span>
+                    </div>
+                    <div class="produto-preco oferta">
+                        <span class="preco-original">R$ 149,90</span>
+                        <span class="preco-promocional">R$ 119,90</span>
+                    </div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+                <div class="promocao-tag">-20%</div>
+            </div>
+
+            <!-- Guirlanda 6 - Porta -->
+            <div class="produto-card" data-categoria="porta">
+                <div class="produto-imagem">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_947605-MLA93585838844_102025-O.webp" alt="Guirlanda Premium">
+                </div>
+                <div class="produto-info">
+                    <h3>Guirlanda Premium 80cm</h3>
+                    <p>Material sintético premium - resistente ao clima e com aroma artificial</p>
+                    <div class="especificacoes">
+                        <span class="espec">📏 80cm</span>
+                        <span class="espec">🌧️ Exterior</span>
+                        <span class="espec">⭐ Premium</span>
+                    </div>
+                    <div class="produto-preco">R$ 159,90</div>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Kits de Guirlandas -->
+        <div class="ofertas-especiais">
+            <h2 class="section-title">Kits de Guirlandas</h2>
+            
+            <div class="kits-grid">
+                <div class="kit-item">
+                    <div class="kit-imagem">
+                        <img src="https://img.elo7.com.br/product/zoom/50C3B9D/guirlanda-porta-de-entrada-mini-coracoes-porta.jpg" alt="Kit Porta Principal">
+                    </div>
+                    <div class="kit-info">
+                        <h3>Kit Entrada Principal</h3>
+                        <p>Guirlanda 70cm + Laço Premium + Sino Decorativo + Placa "Feliz Natal"</p>
+                        <div class="kit-especificacoes">
+                            <span>🚪 Porta principal</span>
+                            <span>🎀 Acessórios inclusos</span>
+                            <span>🌧️ Resistente</span>
+                        </div>
+                        <div class="kit-preco">R$ 199,90</div>
+                        <button class="btn-comprar">Comprar Kit</button>
+                    </div>
+                </div>
+                
+                <div class="kit-item">
+                    <div class="kit-imagem">
+                        <img src="https://images.tcdn.com.br/img/img_prod/754784/guirlanda_de_natal_decorada_luzes_de_led_45_cm_x_45_cm_luxo_411_1_20201109185403.jpeg" alt="Kit Iluminação">
+                    </div>
+                    <div class="kit-info">
+                        <h3>Kit Guirlandas Luminosas</h3>
+                        <p>3 guirlandas LED (porta, parede, mesa) + pilhas + controle universal</p>
+                        <div class="kit-especificacoes">
+                            <span>💡 3 guirlandas LED</span>
+                            <span>🔋 Pilhas inclusas</span>
+                            <span>🎮 Controle único</span>
+                        </div>
+                        <div class="kit-preco oferta">
+                            <span class="preco-original">R$ 349,90</span>
+                            <span class="preco-promocional">R$ 279,90</span>
+                        </div>
+                        <button class="btn-comprar">Comprar Kit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Guia de Colocação -->
+        <div class="guia-colocacao">
+            <h3>📍 Guia de Colocação</h3>
+            <div class="passos-grid">
+                <div class="passo-item">
+                    <div class="passo-numero">1</div>
+                    <h4>Altura Ideal</h4>
+                    <p>Posicione a guirlanda na altura dos olhos para melhor impacto visual</p>
+                </div>
+                <div class="passo-item">
+                    <div class="passo-numero">2</div>
+                    <h4>Fixacao Segura</h4>
+                    <p>Use ganchos específicos para porta ou pregos para paredes</p>
+                </div>
+                <div class="passo-item">
+                    <div class="passo-numero">3</div>
+                    <h4>Balanceamento</h4>
+                    <p>Certifique-se que a guirlanda está nivelada e centralizada</p>
+                </div>
+                <div class="passo-item">
+                    <div class="passo-numero">4</div>
+                    <h4>Acessórios</h4>
+                    <p>Adicione laços e enfeites após a fixação da guirlanda principal</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Dicas de Decoração -->
+        <div class="dicas-decoracao">
+            <h3>🎀 Dicas de Decoração com Guirlandas</h3>
+            <div class="dicas-grid">
+                <div class="dica-item">
+                    <h4>Porta de Entrada</h4>
+                    <p>Escolha guirlandas de 50-70cm para portas padrão. Adicione um laço vermelho!</p>
+                </div>
+                <div class="dica-item">
+                    <h4>Parede da Sala</h4>
+                    <p>Guirlandas maiores (80cm+) criam um ponto focal impressionante na sala.</p>
+                </div>
+                <div class="dica-item">
+                    <h4>Mesa de Jantar</h4>
+                    <p>Mini guirlandas (25-35cm) com velas no centro criam atmosfera acolhedora.</p>
+                </div>
+                <div class="dica-item">
+                    <h4>Varanda/Janelas</h4>
+                    <p>Guirlandas com LEDs são perfeitas para criar efeito mágico do exterior.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Personalização -->
+        <div class="personalizacao">
+            <div class="personalizacao-content">
+                <h3>🎨 Personalize sua Guirlanda!</h3>
+                <p>Adicione elementos especiais para tornar sua guirlanda única</p>
+                <div class="opcoes-personalizacao">
+                    <div class="opcao-item">
+                        <span class="opcao-icone">🎀</span>
+                        <span>Laço Personalizado</span>
+                    </div>
+                    <div class="opcao-item">
+                        <span class="opcao-icone">📝</span>
+                        <span>Placa com Nome</span>
+                    </div>
+                    <div class="opcao-item">
+                        <span class="opcao-icone">⭐</span>
+                        <span>Enfeites Extras</span>
+                    </div>
+                    <div class="opcao-item">
+                        <span class="opcao-icone">🎄</span>
+                        <span>Aroma Especial</span>
+                    </div>
+                </div>
+                <button class="btn-personalizar">Solicitar Orçamento</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-natalino">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 id="footer-logo">Departal</h3>
+                    <p>Transforme sua entrada com nossas guirlandas encantadoras! Qualidade e beleza em cada detalhe.</p>
+                    <button id="btn-topo-footer" class="btn-topo-footer">↑ Voltar ao Topo</button>
+                </div>
+
+                <div class="footer-section">
+                  <h4>Links Rápidos</h4>
+                       <ul>
+                        <li><a href="home.html">Início</a></li>
+                        <li><a href="Sobre.html">Sobre Nós</a></li>
+                        <li><a href="Contato.html">Contato</a></li>
+                        <li><a href="decoracao.html">Decorações</a></li>
+                        <li><a href="roupas.html">Roupas</a></li>
+                        <li><a href="presentes.html">Presentes</a></li>
+                        <li><a href="luzes.html">Luzes</a></li>
+                        <li><a href="presepios.html">Presépios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Serviços Guirlandas</h4>
+                    <ul>
+                        <li><a href="#">Guia de Medidas</a></li>
+                        <li><a href="#">Personalização</a></li>
+                        <li><a href="#">Montagem Profissional</a></li>
+                        <li><a href="#">Manutenção</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter Guirlandas</h4>
+                    <p>Receba inspirações decorativas e ofertas exclusivas!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu email" required>
+                        <button type="submit">🎀</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Departal | Boas-Vindas ao Espírito Natalino!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filtros de categoria para guirlandas
+        document.addEventListener('DOMContentLoaded', function() {
+            const filtroBtns = document.querySelectorAll('.filtro-btn');
+            const produtoCards = document.querySelectorAll('.produto-card');
+            
+            filtroBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove classe ativa de todos os botões
+                    filtroBtns.forEach(b => b.classList.remove('ativo'));
+                    // Adiciona classe ativa ao botão clicado
+                    this.classList.add('ativo');
+                    
+                    const categoria = this.getAttribute('data-categoria');
+                    
+                    // Filtra os produtos
+                    produtoCards.forEach(card => {
+                        const categoriasProduto = card.getAttribute('data-categoria').split(' ');
+                        
+                        if (categoria === 'todos' || categoriasProduto.includes(categoria)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Efeito especial nas guirlandas
+            const cards = document.querySelectorAll('.produto-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) rotate(1deg)';
+                    this.style.boxShadow = '0 15px 30px rgba(139, 69, 19, 0.2)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) rotate(0)';
+                    this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                });
+            });
+
+            // Botão personalizar
+            const btnPersonalizar = document.querySelector('.btn-personalizar');
+            if (btnPersonalizar) {
+                btnPersonalizar.addEventListener('click', function() {
+                    alert('🎄 Em breve entraremos em contato para personalizar sua guirlanda dos sonhos!');
+                });
+            }
+            
+            // Voltar ao topo
+            document.getElementById('btn-topo-footer').addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

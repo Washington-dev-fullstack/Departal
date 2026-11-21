@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Departal | A magia do Natal começa aqui</title>
+<meta name="description" content="Loja de departamentos de Natal: decoração, presentes, roupas, luzes, guirlandas e presépios, com embalagem de Natal grátis.">
+<link rel="icon" href="images/marca/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/chrome.css">
+<link rel="stylesheet" href="css/produtos.css">
+<link rel="stylesheet" href="css/paginas.css">
+<script>try{if(sessionStorage.getItem('dp-porta'))document.documentElement.classList.add('portas-fechadas')}catch(e){}</script>
+</head>
+<body data-pagina="inicio">
+<noscript><p class="aviso-js">A vitrine da Departal precisa de JavaScript para acender. Ative o JavaScript no navegador para ver a loja.</p></noscript>
+<main id="conteudo">
+
+  <section class="vitrine" aria-label="Vitrine da Departal">
+    <canvas class="vitrine__gl" aria-hidden="true"></canvas>
+    <div class="vitrine__letras">
+      <h1 class="titulo t-1">
+        <span class="vitrine__linha"><span class="folha">A magia do Natal</span></span>
+        <span class="vitrine__linha"><span class="folha">começa aqui</span></span>
+      </h1>
+      <p class="vitrine__lide lide">Os presentes mais desejados estão aqui, e o Papai Noel aprova.</p>
+      <div class="vitrine__acoes">
+        <a class="btn" href="#andares">Entrar na loja</a>
+        <a class="btn btn--vidro" href="#ofertas">Ver ofertas</a>
+      </div>
+    </div>
+    <p class="vitrine__contagem"><span class="vitrine__dias num-led"></span><span class="vitrine__rotulo"></span></p>
+    <p class="vitrine__dica" aria-hidden="true"></p>
+  </section>
+
+  <div class="faixa" aria-label="Embalagem de Natal grátis, entrega expressa em até 2 dias úteis e troca grátis">
+    <div class="faixa__trilho" aria-hidden="true"></div>
+  </div>
+
+  <section class="manifesto secao">
+    <div class="envolve manifesto__grade">
+      <p class="manifesto__frase">A magia do Natal começa aqui na Departal, pois lembre-se: os presentes mais desejados estão aqui, e o Papai Noel aprova!</p>
+      <div class="carimbo" aria-hidden="true">
+        <svg class="carimbo__roda" viewBox="0 0 200 200"><defs><path id="circulo" d="M100 100m-84 0a84 84 0 1 1 168 0a84 84 0 1 1-168 0"/></defs><text><textPath href="#circulo" textLength="528">O Papai Noel aprova ✦ O Papai Noel aprova ✦ O Papai Noel aprova ✦&#160;</textPath></text></svg>
+        <span class="carimbo__gorro"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="gondola" id="ofertas" aria-labelledby="titulo-ofertas">
+    <div class="envolve cabeca">
+      <div>
+        <h2 class="titulo t-2" id="titulo-ofertas">Principais ofertas e promoções</h2>
+        <p class="lide">Aproveite nossos melhores preços para celebrar com um sorriso ainda maior.</p>
+      </div>
+      <p class="gondola__visor num-led" aria-hidden="true">01/08</p>
+    </div>
+    <div class="gondola__area"><ul class="gondola__trilho"></ul></div>
+  </section>
+
+  <section class="elevador" id="andares" aria-labelledby="titulo-andares">
+    <div class="elevador__painel">
+      <h2 class="titulo" id="titulo-andares">Escolha seu andar</h2>
+      <p class="elevador__visor num-led" aria-hidden="true"><span class="elevador__seta">▲</span><span>1</span></p>
+      <span class="elevador__nome" aria-hidden="true">Decoração</span>
+      <div class="elevador__botoes"></div>
+    </div>
+    <div class="elevador__cenas"></div>
+  </section>
+
+  <section class="busca secao" id="encontre" aria-labelledby="titulo-busca">
+    <div class="envolve">
+      <div class="busca__topo">
+        <div>
+          <h2 class="titulo t-2" id="titulo-busca">Quanto você quer gastar?</h2>
+          <p class="lide">Todos merecem celebrar, independentemente do orçamento.</p>
+          <div class="busca__chips" role="group" aria-label="Para quem é o presente"></div>
+        </div>
+        <div>
+          <label class="busca__rotulo" for="orcamento">Até</label>
+          <output class="busca__valor num-led" for="orcamento"></output>
+          <input class="faixa-preco" id="orcamento" type="range" min="10" max="700" step="10" value="150">
+        </div>
+      </div>
+      <p class="busca__conta" role="status"></p>
+      <ul class="busca__grade"></ul>
+    </div>
+  </section>
+
+  <section class="servicos secao" aria-labelledby="titulo-servicos">
+    <svg class="servicos__fita" viewBox="0 0 1440 620" preserveAspectRatio="none" aria-hidden="true"><path d="M-20 330C200 260 340 410 520 360s300-110 470-20 300 150 470 40"/></svg>
+    <div class="envolve">
+      <div class="cabeca"><h2 class="titulo t-2" id="titulo-servicos">Do laço até a sua porta</h2></div>
+      <ul class="servicos__lista">
+        <li class="servico" data-icone="presente"><h3 class="t-4">Embalagem de Natal grátis</h3><p class="suave">Papel premium, tag personalizada e laço vermelho em todos os presentes.</p></li>
+        <li class="servico" data-icone="caminhao"><h3 class="t-4">Entrega expressa</h3><p class="suave">Em até 2 dias úteis, para chegar antes do Natal.</p></li>
+        <li class="servico" data-icone="troca"><h3 class="t-4">Troca grátis</h3><p class="suave">Se o tamanho ou o presente não servirem, a gente troca.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="historia secao" aria-labelledby="titulo-historia">
+    <div class="envolve">
+      <h2 class="historia__frase" id="titulo-historia">Uma loja feita por pessoas, para pessoas.</h2>
+      <p class="historia__txt">Tudo começou com uma pequena loja de bairro, onde Washington, nosso fundador, atendia pessoalmente cada cliente com um sorriso genuíno.</p>
+      <a class="link" href="sobre.html">Conheça nossa história</a>
+    </div>
+  </section>
+
+  <section class="novidades" aria-labelledby="titulo-novidades">
+    <div class="envolve">
+      <div class="novidades__caixa">
+        <div>
+          <h2 class="titulo t-3" id="titulo-novidades">Fique por dentro das ofertas de Natal</h2>
+        </div>
+        <form class="novidades__form">
+          <label class="so-leitor" for="email-novidades">Seu e-mail</label>
+          <input class="campo" id="email-novidades" type="email" required placeholder="seu@email.com" autocomplete="email">
+          <button class="btn" type="submit">Quero receber</button>
+          <p class="novidades__ok" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="js/vendor/SplitText.min.js"></script>
+<script src="js/vendor/DrawSVGPlugin.min.js"></script>
+<script src="js/vendor/Flip.min.js"></script>
+<script src="js/vendor/CustomEase.min.js"></script>
+<script src="js/vendor/ScrambleTextPlugin.min.js"></script>
+<script src="js/vendor/three.min.js"></script>
+<script src="js/dados/letreiro.js"></script>
+<script src="js/dados/catalogo.js"></script>
+<script src="js/nucleo.js"></script>
+<script src="js/chrome.js"></script>
+<script src="js/sacola.js"></script>
+<script src="js/produtos.js"></script>
+<script src="js/hero.js"></script>
+<script src="js/home.js"></script>
+<script>
+Departal.$(".carimbo__gorro").innerHTML = Departal.gorro;
+Departal.iniciar();
+</script>
+</body>
+</html>

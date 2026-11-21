@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Departal: direções visuais</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Doto:wght@600;900&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+body{background:#0c0e0d;color:#efe9dc;font:400 15px/1.5 'Instrument Sans',system-ui,sans-serif;padding:28px 16px 64px}
+.wrap{max-width:1120px;margin:0 auto;display:grid;gap:40px}
+.intro h1{font:500 clamp(24px,3.4vw,34px)/1.12 Fraunces,serif;letter-spacing:-.01em}
+.intro p{color:#a9aaa1;max-width:64ch;margin-top:6px}
+.label{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.label b{font:600 19px/1.2 Fraunces,serif}
+.label span{color:#a9aaa1;font-size:14px}
+.label .tag{font-size:12px;padding:2px 10px;border-radius:99px;background:#e8c27a;color:#2b1d05;font-weight:600}
+.frame{position:relative;aspect-ratio:16/9;width:100%;border-radius:16px;overflow:hidden;container-type:inline-size;isolation:isolate}
+.note{color:#a9aaa1;font-size:14px;margin-top:10px;max-width:78ch}
+.note strong{color:#efe9dc;font-weight:600}
+
+/* A: Vitrine Noturna */
+.a{background:#06120d}
+.a canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.a .fog{touch-action:none;cursor:crosshair}
+.a-nav{position:absolute;z-index:3;top:2cqw;left:2.2cqw;right:2.2cqw;display:flex;align-items:center;justify-content:space-between;padding:1cqw 1.8cqw;border-radius:99px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.17);backdrop-filter:blur(14px) saturate(1.4);pointer-events:none}
+.a-logo{font:800 clamp(11px,1.7cqw,20px)/1 'Instrument Sans',sans-serif;letter-spacing:.16em;color:#fff4e3;text-shadow:0 0 14px #ff4b3e}
+.a-links{display:flex;gap:2.2cqw;font-size:clamp(9px,1.1cqw,13px);color:#dcd7c9}
+.a-copy{position:absolute;z-index:3;left:5cqw;bottom:5.4cqw;max-width:60cqw;pointer-events:none}
+.led{font:900 clamp(11px,1.75cqw,22px)/1 Doto,monospace;letter-spacing:.05em;color:#ffcf87;text-shadow:0 0 12px rgba(255,190,100,.9)}
+.a h2{font-family:Fraunces,serif;font-weight:600;font-size:7.6cqw;line-height:.98;font-variation-settings:'SOFT' 100,'opsz' 144;letter-spacing:-.02em;margin:1.1cqw 0 1.3cqw;background:linear-gradient(100deg,#fff2d2,#e8c27a 38%,#fff6df 52%,#c9964a 78%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 .2cqw 1.2cqw rgba(0,0,0,.55))}
+.a h2 em{font-weight:400}
+.a-sub{font-size:clamp(10px,1.4cqw,17px);color:#e9e3d4;max-width:44cqw;text-shadow:0 1px 8px rgba(0,0,0,.65)}
+.a-cta{display:inline-block;margin-top:1.6cqw;padding:.95cqw 2cqw;border-radius:99px;background:#c8102e;color:#fff;font-weight:600;font-size:clamp(10px,1.3cqw,15px);box-shadow:0 0 2.4cqw rgba(200,16,46,.65)}
+.lift{position:absolute;z-index:3;right:2.4cqw;top:53%;transform:translateY(-50%);display:grid;gap:.55cqw;padding:.75cqw;border-radius:99px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.17);backdrop-filter:blur(12px);pointer-events:none}
+.lift i{display:grid;place-items:center;width:3cqw;aspect-ratio:1;border-radius:50%;font:900 1.35cqw/1 Doto,monospace;font-style:normal;color:#d7d1c2;border:1px solid rgba(255,255,255,.2)}
+.lift i.on{background:#ffcf87;color:#2a1903;box-shadow:0 0 1.6cqw rgba(255,190,100,.85);border-color:#ffcf87}
+.hint{position:absolute;z-index:3;right:8.4cqw;bottom:3.2cqw;font-size:clamp(9px,1.1cqw,13px);color:#fff6e4;padding:.5cqw 1.2cqw;border-radius:99px;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.2);pointer-events:none}
+
+/* B: Papel e Fita */
+.b{background:#f5eedf;color:#1f3a2b}
+.b svg{position:absolute;inset:0;width:100%;height:100%}
+.b-nav{position:absolute;z-index:4;top:2.4cqw;left:4cqw;right:4cqw;display:flex;justify-content:space-between;align-items:center;font-size:clamp(9px,1.15cqw,14px)}
+.b-logo{font:900 clamp(13px,2cqw,24px)/1 Fraunces,serif;color:#b3111f;font-variation-settings:'SOFT' 100}
+.b-copy{position:absolute;z-index:4;left:4cqw;top:9cqw;max-width:66cqw}
+.b h2{font-family:Fraunces,serif;font-weight:800;font-size:9cqw;line-height:.94;letter-spacing:-.03em;color:#b3111f;font-variation-settings:'SOFT' 100,'opsz' 144}
+.b h2 em{font-weight:300;color:#1f3a2b}
+.b-sub{margin-top:1.5cqw;font-size:clamp(10px,1.45cqw,17px);max-width:42cqw}
+.stamp{position:absolute;z-index:4;right:6cqw;top:10cqw;width:15cqw;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;text-align:center;border:.25cqw dashed #b3111f;color:#b3111f;font:700 1.45cqw/1.1 Fraunces,serif;transform:rotate(-11deg);background:#f5eedf}
+
+/* C: Natal Elétrico */
+.c{background:#c8102e;color:#fff3e0}
+.c-nav{position:absolute;z-index:4;top:2.2cqw;left:3cqw;right:3cqw;display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:clamp(9px,1.2cqw,14px);letter-spacing:.04em;text-transform:uppercase}
+.c h2{position:absolute;z-index:1;left:2.4cqw;right:0;bottom:6.2cqw;font:400 31.5cqw/.84 Anton,sans-serif;letter-spacing:-.005em;text-transform:uppercase;white-space:nowrap}
+.chrome{position:absolute;z-index:2;border-radius:50%;background:radial-gradient(circle at 34% 28%,#fff,#dbe1e6 16%,#87929b 40%,#14181b 61%,#a7b1b9 83%,#f4f6f7)}
+.chrome::after{content:"";position:absolute;left:50%;top:-5%;width:12%;height:9%;transform:translateX(-50%);background:linear-gradient(#f4f6f7,#6e7880);border-radius:2px 2px 0 0}
+.sticker{position:absolute;z-index:3;display:grid;place-items:center;width:15cqw;aspect-ratio:1;border-radius:50%;background:#ffd21f;color:#1a1200;font:400 5cqw/1 Anton,sans-serif;transform:rotate(11deg);right:7cqw;top:7.5cqw}
+.ticker{position:absolute;z-index:4;left:0;right:0;bottom:0;background:#0e0e0e;color:#ffd21f;font:400 2.1cqw/1 Anton,sans-serif;padding:1.3cqw 0;white-space:nowrap;letter-spacing:.04em;overflow:hidden}
+.ticker span{display:inline-block;padding-left:100%;animation:run 22s linear infinite}
+@keyframes run{to{transform:translateX(-100%)}}
+@media (prefers-reduced-motion:reduce){.ticker span{animation:none;padding-left:2cqw}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="intro">
+    <h1>Departal: 3 direções para o Natal de 2026</h1>
+    <p>Mesma mensagem nas três, para você comparar só o visual. São prévias da abertura do site; o movimento completo entra depois da escolha.</p>
+  </header>
+
+  <section>
+    <div class="label"><b>A. Vitrine Noturna</b><span class="tag">Recomendada</span><span>vidro, luz e noite</span></div>
+    <div class="frame a" id="vitrine">
+      <canvas class="sharp" aria-hidden="true"></canvas>
+      <canvas class="fog" aria-label="Vidro embaçado: passe o mouse para limpar"></canvas>
+      <div class="a-nav"><span class="a-logo">DEPARTAL</span><span class="a-links"><span>Ofertas</span><span>Andares</span><span>Sobre</span><span>Sacola 0</span></span></div>
+      <div class="a-copy">
+        <p class="led">FALTAM 54 DIAS PARA O NATAL</p>
+        <h2>A magia do Natal <em>começa aqui.</em></h2>
+        <p class="a-sub">Os presentes mais desejados estão aqui, e o Papai Noel aprova.</p>
+        <span class="a-cta">Entrar na loja</span>
+      </div>
+      <div class="lift" aria-hidden="true"><i>6</i><i>5</i><i>4</i><i>3</i><i>2</i><i>1</i><i class="on">T</i></div>
+      <span class="hint">Passe o mouse no vidro</span>
+    </div>
+    <p class="note"><strong>A ideia:</strong> a Departal vira um prédio de vidro à noite. Você chega pela vitrine embaçada e limpa o vidro com o mouse ou o dedo. Cada departamento é um andar, e o menu é o painel do elevador.</p>
+  </section>
+
+  <section>
+    <div class="label"><b>B. Papel e Fita</b><span>editorial, claro e artesanal</span></div>
+    <div class="frame b" id="papel">
+      <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice" aria-hidden="true"></svg>
+      <div class="b-nav"><span class="b-logo">Departal</span><span>Ofertas &nbsp;·&nbsp; Departamentos &nbsp;·&nbsp; Sobre &nbsp;·&nbsp; Sacola (0)</span></div>
+      <div class="b-copy">
+        <h2>A magia do Natal <em>começa aqui.</em></h2>
+        <p class="b-sub">Os presentes mais desejados estão aqui, e o Papai Noel aprova.</p>
+      </div>
+      <div class="stamp">O Papai<br>Noel<br>aprova</div>
+    </div>
+    <p class="note"><strong>A ideia:</strong> evolui as árvores recortadas da sua imagem de parallax para camadas de papel, com uma fita vermelha que se desenha pela página. É a opção mais clássica, com menos cara de tecnologia.</p>
+  </section>
+
+  <section>
+    <div class="label"><b>C. Natal Elétrico</b><span>vermelho, gigante e barulhento</span></div>
+    <div class="frame c">
+      <div class="c-nav"><span>Departal</span><span>Ofertas / Andares / Sacola 0</span></div>
+      <h2>Natal</h2>
+      <div class="chrome" style="width:15cqw;aspect-ratio:1;left:21cqw;top:11cqw"></div>
+      <div class="chrome" style="width:9cqw;aspect-ratio:1;left:58cqw;top:6.5cqw"></div>
+      <div class="chrome" style="width:12cqw;aspect-ratio:1;left:39cqw;bottom:3.8cqw"></div>
+      <div class="sticker">-40%</div>
+      <div class="ticker"><span>OS PRESENTES MAIS DESEJADOS ESTÃO AQUI &nbsp;★&nbsp; E O PAPAI NOEL APROVA &nbsp;★&nbsp; ATÉ -52% NAS OFERTAS &nbsp;★&nbsp; EMBALAGEM GRÁTIS &nbsp;★&nbsp; FALTAM 54 DIAS</span></div>
+    </div>
+    <p class="note"><strong>A ideia:</strong> energia de grande liquidação, com tipografia gigante e bolas cromadas. Tem muita personalidade e vende rápido, mas perde o aconchego e a sensação de loja cuidadosa.</p>
+  </section>
+</div>
+
+<script>
+/* Vitrine: cena nítida embaixo, cópia desfocada por cima e o mouse apaga a camada de cima */
+(function () {
+  const frame = document.getElementById('vitrine');
+  const sharp = frame.querySelector('.sharp');
+  const fog = frame.querySelector('.fog');
+  const sx = sharp.getContext('2d');
+  const fx = fog.getContext('2d');
+  const blurred = document.createElement('canvas');
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let W = 0, H = 0, last = null, drips = [];
+
+  function rng(seed) { return () => (seed = (seed * 16807) % 2147483647) / 2147483647; }
+
+  function ball(c, x, y, r, top, base, deep) {
+    c.strokeStyle = 'rgba(232,194,122,.55)';
+    c.lineWidth = Math.max(1, r * .03);
+    c.beginPath(); c.moveTo(x, 0); c.lineTo(x, y - r * 1.15); c.stroke();
+    const cap = c.createLinearGradient(x - r * .16, 0, x + r * .16, 0);
+    cap.addColorStop(0, '#7c5a22'); cap.addColorStop(.5, '#ffe6ad'); cap.addColorStop(1, '#6e4d1b');
+    c.fillStyle = cap; c.fillRect(x - r * .16, y - r * 1.15, r * .32, r * .2);
+    const g = c.createRadialGradient(x - r * .36, y - r * .42, r * .04, x, y, r * 1.04);
+    g.addColorStop(0, '#fff8ea'); g.addColorStop(.1, top); g.addColorStop(.52, base); g.addColorStop(.92, deep); g.addColorStop(1, top);
+    c.fillStyle = g; c.beginPath(); c.arc(x, y, r, 0, 7); c.fill();
+  }
+
+  function paint() {
+    const box = frame.getBoundingClientRect();
+    const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+    W = sharp.width = fog.width = blurred.width = Math.round(box.width * dpr);
+    H = sharp.height = fog.height = blurred.height = Math.round(box.height * dpr);
+    const bg = sx.createLinearGradient(0, 0, W, H);
+    bg.addColorStop(0, '#04100b'); bg.addColorStop(.55, '#0a2419'); bg.addColorStop(1, '#17301f');
+    sx.fillStyle = bg; sx.fillRect(0, 0, W, H);
+    const warm = sx.createRadialGradient(W * .74, H * .5, 0, W * .74, H * .5, W * .55);
+    warm.addColorStop(0, 'rgba(255,168,84,.42)'); warm.addColorStop(.5, 'rgba(200,40,36,.13)'); warm.addColorStop(1, 'rgba(0,0,0,0)');
+    sx.fillStyle = warm; sx.fillRect(0, 0, W, H);
+    const r = rng(2026), tones = ['255,199,120', '255,140,84', '255,226,170', '210,44,44', '140,220,170'];
+    for (let i = 0; i < 64; i++) {
+      const x = r() * W, y = r() * H, rad = (.008 + r() * .034) * W;
+      sx.fillStyle = `rgba(${tones[Math.floor(r() * tones.length)]},${.05 + r() * .2})`;
+      sx.beginPath(); sx.arc(x, y, rad, 0, 7); sx.fill();
+    }
+    ball(sx, W * .64, H * .44, W * .072, '#ffd98c', '#c2852b', '#452a08');
+    ball(sx, W * .76, H * .3, W * .052, '#ffb2a0', '#c8102e', '#3c0509');
+    ball(sx, W * .83, H * .58, W * .082, '#e9f3ee', '#7f9c92', '#14231d');
+    ball(sx, W * .54, H * .24, W * .038, '#ffb2a0', '#c8102e', '#3c0509');
+    ball(sx, W * .92, H * .22, W * .044, '#ffd98c', '#c2852b', '#452a08');
+
+    const bx = blurred.getContext('2d');
+    bx.filter = `blur(${W * .017}px) brightness(1.1)`;
+    bx.drawImage(sharp, 0, 0);
+    bx.filter = 'none';
+    bx.fillStyle = 'rgba(205,232,224,.14)'; bx.fillRect(0, 0, W, H);
+    const s = rng(7);
+    bx.fillStyle = 'rgba(255,255,255,.07)';
+    for (let i = 0; i < 2600; i++) bx.fillRect(s() * W, s() * H, 1 + s() * 2, 1 + s() * 2);
+    fx.globalCompositeOperation = 'source-over';
+    fx.drawImage(blurred, 0, 0);
+    if (!still) autoWipe(); else wipePath([[.5, .16], [.62, .52], [.78, .3], [.9, .62]]);
+  }
+
+  function stroke(ax, ay, bx, by, w) {
+    fx.globalCompositeOperation = 'destination-out';
+    fx.lineCap = 'round';
+    fx.strokeStyle = '#000';
+    fx.lineWidth = w;
+    fx.shadowColor = '#000';
+    fx.shadowBlur = w * .28;
+    fx.beginPath(); fx.moveTo(ax, ay); fx.lineTo(bx, by); fx.stroke();
+    fx.shadowBlur = 0;
+    if (Math.random() < .1) drips.push({ x: bx + (Math.random() - .5) * w * .6, y: by + w * .4, v: 1 + Math.random() * 1.6, life: 60 + Math.random() * 90 });
+  }
+
+  function wipePath(p) {
+    for (let i = 1; i < p.length; i++) stroke(p[i - 1][0] * W, p[i - 1][1] * H, p[i][0] * W, p[i][1] * H, W * .05);
+  }
+
+  function autoWipe() {
+    const pts = [[.5, .2], [.62, .5], [.72, .26], [.84, .6], [.92, .34]];
+    let t = 0;
+    (function step() {
+      t += .03;
+      const i = Math.min(Math.floor(t), pts.length - 2), f = Math.min(t - i, 1);
+      const a = pts[i], b = pts[i + 1];
+      const x = a[0] + (b[0] - a[0]) * f, y = a[1] + (b[1] - a[1]) * f;
+      if (step.px !== undefined) stroke(step.px * W, step.py * H, x * W, y * H, W * .05);
+      step.px = x; step.py = y;
+      if (t < pts.length - 1) requestAnimationFrame(step);
+    })();
+  }
+
+  let visible = true;
+  new IntersectionObserver(e => { visible = e[0].isIntersecting; if (visible) requestAnimationFrame(tick); }).observe(frame);
+
+  function tick() {
+    if (!visible) return;
+    fx.globalCompositeOperation = 'destination-over';
+    fx.globalAlpha = .0022;
+    fx.drawImage(blurred, 0, 0);
+    fx.globalAlpha = 1;
+    drips = drips.filter(d => d.life > 0);
+    drips.forEach(d => {
+      fx.globalCompositeOperation = 'destination-out';
+      fx.fillStyle = '#000';
+      fx.beginPath(); fx.arc(d.x, d.y, W * .0024, 0, 7); fx.fill();
+      d.y += d.v; d.life -= 1;
+    });
+    requestAnimationFrame(tick);
+  }
+
+  function point(e) {
+    const b = fog.getBoundingClientRect();
+    return [(e.clientX - b.left) * (W / b.width), (e.clientY - b.top) * (H / b.height)];
+  }
+  fog.addEventListener('pointermove', e => {
+    const p = point(e);
+    if (last) stroke(last[0], last[1], p[0], p[1], W * .052);
+    last = p;
+  });
+  fog.addEventListener('pointerleave', () => { last = null; });
+
+  paint();
+  if (!still) tick();
+  let resizeTimer;
+  addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(paint, 200); });
+})();
+
+/* Papel: árvores recortadas em camadas, com a fita por cima */
+(function () {
+  const svg = document.querySelector('#papel svg');
+  const NS = 'http://www.w3.org/2000/svg';
+  const r = (s => () => (s = (s * 16807) % 2147483647) / 2147483647)(1225);
+  function el(n, a) { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); return e; }
+  function tree(cx, base, h, w) {
+    const tiers = 4, left = [], right = [];
+    for (let i = 0; i < tiers; i++) {
+      const t = i / tiers, y = base - h * t, half = w * (1 - t * .8), notch = h / tiers * .86;
+      left.push(`${cx - half},${y}`, `${cx - half * .44},${y - notch}`);
+      right.unshift(`${cx + half * .44},${y - notch}`, `${cx + half},${y}`);
+    }
+    return [...left, `${cx},${base - h}`, ...right].join(' ');
+  }
+  svg.appendChild(el('circle', { cx: 1150, cy: 420, r: 118, fill: '#e3b45c' }));
+  const layers = [
+    { fill: '#7d9a7f', base: 800, h: [230, 340], w: 96, n: 11 },
+    { fill: '#3f6f55', base: 860, h: [190, 300], w: 104, n: 9 },
+    { fill: '#1f3a2b', base: 930, h: [160, 250], w: 112, n: 8 }
+  ];
+  layers.forEach((l, i) => {
+    const g = el('g', { fill: l.fill, style: 'filter:drop-shadow(0 -6px 12px rgba(40,30,10,.3))' });
+    for (let k = 0; k < l.n; k++) {
+      const cx = (k + .5) * (1600 / l.n) + (r() - .5) * 70;
+      g.appendChild(el('polygon', { points: tree(cx, l.base, l.h[0] + r() * (l.h[1] - l.h[0]), l.w) }));
+    }
+    g.appendChild(el('rect', { x: 0, y: l.base - 1, width: 1600, height: 300 }));
+    svg.appendChild(g);
+  });
+  svg.appendChild(el('path', { d: 'M-20 700 C 230 570, 420 830, 690 660 S 1080 560, 1240 700 S 1500 820, 1640 640', fill: 'none', stroke: '#b3111f', 'stroke-width': 13, 'stroke-linecap': 'round', style: 'filter:drop-shadow(0 4px 5px rgba(50,0,0,.35))' }));
+})();
+</script>
+</body>
+</html>

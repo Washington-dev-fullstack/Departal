@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-BR" data-andar="3">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roupas | Departal</title>
+<meta name="description" content="Vista o espírito natalino! Encontre looks perfeitos para as festas de fim de ano.">
+<link rel="icon" href="images/marca/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/chrome.css">
+<link rel="stylesheet" href="css/produtos.css">
+<link rel="stylesheet" href="css/paginas.css">
+<link rel="stylesheet" href="css/andares.css">
+<script>try{if(sessionStorage.getItem('dp-porta'))document.documentElement.classList.add('portas-fechadas')}catch(e){}</script>
+</head>
+<body>
+<noscript><p class="aviso-js">A vitrine da Departal precisa de JavaScript para acender. Ative o JavaScript no navegador para ver a loja.</p></noscript>
+<main id="conteudo">
+
+  <section class="capa capa--peca">
+    <div class="capa__peca capa__peca--pendurada" aria-hidden="true" style="--px: 0.551; --py: 0.065"><div class="capa__balanco"><span class="capa__prendedor"></span><img src="images/produtos/par-meias.webp" alt="" width="800" height="800" decoding="async"></div></div>
+    <div class="envolve">
+      <p class="capa__num num-led">3</p>
+      <h1 class="titulo t-1 folha">Roupas</h1>
+      <p class="lide">Vista o espírito natalino! Encontre looks perfeitos para as festas de fim de ano.</p>
+    </div>
+  </section>
+
+  <section class="secao" id="produtos" aria-labelledby="titulo-produtos">
+    <div class="envolve">
+      <h2 class="titulo t-3 andar__titulo" id="titulo-produtos">Coleção natalina</h2>
+      <div class="andar__filtros"></div>
+      <ul class="andar__grade"></ul>
+    </div>
+  </section>
+
+  <section class="secao provador" aria-labelledby="titulo-looks">
+    <div class="envolve">
+      <div class="cabeca">
+        <h2 class="titulo t-2" id="titulo-looks">Looks completos</h2>
+        <p class="lide">Combinações prontas para a ceia e para a foto da família.</p>
+      </div>
+      <div class="provador__cabine">
+        <span class="provador__varao" aria-hidden="true"></span>
+        <ul class="andar__extras provador__looks" data-secao="looks"></ul>
+        <span class="provador__cortina provador__cortina--e" aria-hidden="true"></span>
+        <span class="provador__cortina provador__cortina--d" aria-hidden="true"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao medidas" id="tamanhos" aria-labelledby="titulo-medidas">
+    <div class="envolve medidas__grade">
+      <div>
+        <h2 class="titulo t-2" id="titulo-medidas">Guia de tamanhos</h2>
+        <p class="lide">Meça com uma fita métrica, sem apertar, e compare com a tabela.</p>
+        <div class="medidas__abas" role="tablist" aria-label="Tabelas de tamanho">
+          <span class="medidas__marca" aria-hidden="true"></span>
+          <button type="button" role="tab" id="aba-adultos" aria-controls="painel-adultos" aria-selected="true">Adultos</button>
+          <button type="button" role="tab" id="aba-criancas" aria-controls="painel-criancas" aria-selected="false" tabindex="-1">Crianças</button>
+        </div>
+      </div>
+      <div>
+        <div role="tabpanel" id="painel-adultos" aria-labelledby="aba-adultos">
+          <label class="medidas__calc">Seu busto, em centímetros<input class="campo" type="number" inputmode="numeric" min="60" max="140" data-calc="adultos" placeholder="Ex.: 90"></label>
+          <p class="medidas__resposta" role="status"></p>
+          <table class="medidas__tabela">
+            <thead><tr><th scope="col">Tamanho</th><th scope="col">Busto</th><th scope="col">Cintura</th></tr></thead>
+            <tbody>
+              <tr data-nome="P" data-de="84" data-ate="88"><th scope="row">P</th><td>84 a 88 cm</td><td>64 a 68 cm</td></tr>
+              <tr data-nome="M" data-de="88" data-ate="92"><th scope="row">M</th><td>88 a 92 cm</td><td>68 a 72 cm</td></tr>
+              <tr data-nome="G" data-de="92" data-ate="96"><th scope="row">G</th><td>92 a 96 cm</td><td>72 a 76 cm</td></tr>
+              <tr data-nome="GG" data-de="96" data-ate="100"><th scope="row">GG</th><td>96 a 100 cm</td><td>76 a 80 cm</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div role="tabpanel" id="painel-criancas" aria-labelledby="aba-criancas" hidden>
+          <label class="medidas__calc">Altura da criança, em centímetros<input class="campo" type="number" inputmode="numeric" min="60" max="160" data-calc="criancas" placeholder="Ex.: 110"></label>
+          <p class="medidas__resposta" role="status"></p>
+          <table class="medidas__tabela">
+            <thead><tr><th scope="col">Idade</th><th scope="col">Altura</th><th scope="col">Peso</th></tr></thead>
+            <tbody>
+              <tr data-nome="2 a 4 anos" data-de="92" data-ate="104"><th scope="row"><span aria-hidden="true">2-4</span><span class="so-leitor">2 a 4 anos</span></th><td>92 a 104 cm</td><td>12 a 16 kg</td></tr>
+              <tr data-nome="5 a 6 anos" data-de="104" data-ate="116"><th scope="row"><span aria-hidden="true">5-6</span><span class="so-leitor">5 a 6 anos</span></th><td>104 a 116 cm</td><td>16 a 21 kg</td></tr>
+              <tr data-nome="7 a 8 anos" data-de="116" data-ate="128"><th scope="row"><span aria-hidden="true">7-8</span><span class="so-leitor">7 a 8 anos</span></th><td>116 a 128 cm</td><td>21 a 26 kg</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao dicas" aria-labelledby="titulo-dicas">
+    <div class="envolve dicas__grade">
+      <h2 class="titulo t-2" id="titulo-dicas">Dicas de estilo para as festas</h2>
+      <ul class="dicas__lista">
+        <li class="dica" data-icone="tecido"><h3 class="t-4">Para a ceia</h3><p>Opte por roupas confortáveis, mas elegantes: vestidos fluidos ou camisas sociais.</p></li>
+        <li class="dica" data-icone="cor"><h3 class="t-4">Cores festivas</h3><p>Vermelho, verde, dourado e prateado são sempre bem-vindos nas festas.</p></li>
+        <li class="dica" data-icone="brilho"><h3 class="t-4">Conforto em primeiro lugar</h3><p>Prefira tecidos respiráveis para as horas de celebração em família.</p></li>
+        <li class="dica" data-icone="pessoas"><h3 class="t-4">Looks combinando</h3><p>Roupas que combinam entre si criam momentos especiais em família.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="entrega-secao" aria-labelledby="titulo-entrega">
+    <div class="envolve">
+      <div class="entrega">
+        <span class="entrega__xadrez" aria-hidden="true"></span>
+        <div>
+          <h2 class="titulo t-3" id="titulo-entrega">Entrega expressa para o Natal</h2>
+          <p class="entrega__prazo">Garanta suas roupas natalinas a tempo das festas: entrega em até 2 dias úteis.</p>
+        </div>
+        <ul class="entrega__lista">
+          <li data-icone="confere">Entregamos antes do Natal</li>
+          <li data-icone="confere">Troca grátis</li>
+          <li data-icone="confere">Tamanhos especiais</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="js/vendor/SplitText.min.js"></script>
+<script src="js/vendor/DrawSVGPlugin.min.js"></script>
+<script src="js/vendor/Flip.min.js"></script>
+<script src="js/vendor/CustomEase.min.js"></script>
+<script src="js/vendor/ScrambleTextPlugin.min.js"></script>
+<script src="js/dados/letreiro.js"></script>
+<script src="js/dados/catalogo.js"></script>
+<script src="js/nucleo.js"></script>
+<script src="js/chrome.js"></script>
+<script src="js/sacola.js"></script>
+<script src="js/produtos.js"></script>
+<script src="js/andar.js"></script>
+<script src="js/andares/roupas.js"></script>
+<script>Departal.iniciar()</script>
+</body>
+</html>

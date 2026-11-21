@@ -1,0 +1,12 @@
+# Geradas pelos scripts de tools/ e refeitas a qualquer momento: ficam só no computador
+tools/blender/saida/
+tools/blender/saida-paginas/
+tools/blender/tex/
+tools/blender/log-conversao.txt
+tools/build/node_modules/
+__pycache__/
+
+# Configurações locais e arquivos do sistema
+.claude/
+desktop.ini
+Thumbs.db

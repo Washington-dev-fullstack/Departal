@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contato | Departal</title>
+<meta name="description" content="Fale com a equipe da Departal.">
+<link rel="icon" href="images/marca/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/chrome.css">
+<link rel="stylesheet" href="css/produtos.css">
+<link rel="stylesheet" href="css/paginas.css">
+<link rel="stylesheet" href="css/andares.css">
+<script>try{if(sessionStorage.getItem('dp-porta'))document.documentElement.classList.add('portas-fechadas')}catch(e){}</script>
+</head>
+<body>
+<noscript><p class="aviso-js">A vitrine da Departal precisa de JavaScript para acender. Ative o JavaScript no navegador para ver a loja.</p></noscript>
+<main id="conteudo">
+
+  <section class="capa capa--contato">
+    <div class="placa" aria-hidden="true">
+      <span class="placa__brilho"></span>
+      <div class="placa__balanco">
+        <span class="placa__argola"></span>
+        <svg class="placa__cordao" viewBox="0 0 100 40" preserveAspectRatio="none"><path d="M50 1 12 40M50 1l38 39"/></svg>
+        <div class="placa__quadro"><span class="placa__neon" data-texto="Aberto">Aberto</span></div>
+      </div>
+    </div>
+    <div class="envolve">
+      <h1 class="titulo t-1 folha">Contato</h1>
+      <p class="lide">Estamos aqui para ajudar! Fale com nossa equipe.</p>
+      <p class="agora" role="status">Segunda a sábado, das 9h às 18h</p>
+    </div>
+  </section>
+
+  <section class="secao contato" aria-label="Fale com a Departal">
+    <div class="envolve contato__grade">
+      <div class="contato__info">
+        <div class="contato__bloco">
+          <span class="contato__icone" data-icone="pino"></span>
+          <h2 class="t-4">Visite a loja</h2>
+          <p>Parque Ortolândia, rua Fabrício II, número 822</p>
+        </div>
+        <div class="contato__bloco">
+          <span class="contato__icone" data-icone="telefone"></span>
+          <h2 class="t-4">Ligue ou escreva</h2>
+          <p><a class="link" href="tel:+5519923666666">(19) 92366-6666</a><br><a class="link" href="mailto:Departal.org@gmail.com">Departal.org@gmail.com</a></p>
+        </div>
+        <div class="contato__bloco">
+          <span class="contato__icone" data-icone="relogio"></span>
+          <h2 class="t-4" id="titulo-horario">Horários</h2>
+          <table class="semana" aria-labelledby="titulo-horario">
+            <thead>
+              <tr><td></td><th scope="col"><abbr title="Domingo">Dom</abbr></th><th scope="col"><abbr title="Segunda">Seg</abbr></th><th scope="col"><abbr title="Terça">Ter</abbr></th><th scope="col"><abbr title="Quarta">Qua</abbr></th><th scope="col"><abbr title="Quinta">Qui</abbr></th><th scope="col"><abbr title="Sexta">Sex</abbr></th><th scope="col"><abbr title="Sábado">Sáb</abbr></th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Abre</th><td class="num-led">10h</td><td class="num-led">9h</td><td class="num-led">9h</td><td class="num-led">9h</td><td class="num-led">9h</td><td class="num-led">9h</td><td class="num-led">9h</td></tr>
+              <tr><th scope="row">Fecha</th><td class="num-led">16h</td><td class="num-led">18h</td><td class="num-led">18h</td><td class="num-led">18h</td><td class="num-led">18h</td><td class="num-led">18h</td><td class="num-led">18h</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <form class="contato__form" aria-labelledby="titulo-suporte">
+        <div class="contato__corpo">
+          <h2 class="titulo t-3" id="titulo-suporte">Suporte ao cliente</h2>
+          <p class="suave">Tem alguma dúvida, sugestão ou precisa de ajuda? Preencha o formulário abaixo que retornaremos em até 24h.</p>
+          <p class="contato__aviso" hidden>Seu pedido de orçamento já está na mensagem. Confira e envie.</p>
+          <div class="contato__campos">
+            <label>Nome completo<input class="campo" name="nome" required autocomplete="name"></label>
+            <label>E-mail<input class="campo" name="email" type="email" required autocomplete="email"></label>
+            <label>Telefone (opcional)<input class="campo" name="telefone" type="tel" autocomplete="tel"></label>
+            <label>Assunto<select class="campo" name="assunto"><option>Dúvida sobre produtos</option><option>Orçamento de guirlanda</option><option>Suporte técnico</option><option>Reclamação</option><option>Sugestão</option><option>Outro</option></select></label>
+            <label class="contato__largo">Mensagem<textarea class="campo" name="mensagem" required></textarea></label>
+          </div>
+          <button class="btn" type="submit">Enviar mensagem</button>
+        </div>
+        <p class="so-leitor contato__status" role="status"></p>
+        <div class="contato__carta" hidden>
+          <svg class="carta" viewBox="0 0 240 222" aria-hidden="true">
+            <defs><linearGradient id="carta-selo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe4b0"/><stop offset=".55" stop-color="#e8c27a"/><stop offset="1" stop-color="#a9792f"/></linearGradient></defs>
+            <ellipse class="carta__sombra" cx="120" cy="214" rx="92" ry="6"/>
+            <rect class="carta__fundo" x="20" y="102" width="200" height="110" rx="10"/>
+            <path class="carta__aba carta__aba--fundo" d="M20 102 120 44l100 58Z"/>
+            <g class="carta__folha"><rect x="40" y="0" width="160" height="100" rx="5"/><path d="M60 26h120M60 42h120M60 58h76"/></g>
+            <path class="carta__bolso" d="M20 106l100 54 100-54v96a10 10 0 0 1-10 10H30a10 10 0 0 1-10-10Z"/>
+            <path class="carta__aba carta__aba--frente" d="M20 102l100 60 100-60Z"/>
+            <g class="carta__selo"><circle cx="120" cy="156" r="19" fill="url(#carta-selo)"/><circle cx="120" cy="156" r="15" fill="none" stroke="rgba(90,60,20,.4)"/></g>
+          </svg>
+          <h3 class="t-4" tabindex="-1">Mensagem pronta</h3>
+          <p class="suave">Envio simulado: este site é uma demonstração e nenhuma mensagem foi enviada.</p>
+          <button class="btn btn--vidro btn--pequeno" type="button">Escrever outra mensagem</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="secao duvidas" aria-labelledby="titulo-duvidas">
+    <div class="envolve duvidas__grade">
+      <div class="duvidas__topo">
+        <h2 class="titulo t-2" id="titulo-duvidas">Perguntas frequentes</h2>
+        <p class="lide">Talvez a sua resposta já esteja aqui.</p>
+      </div>
+      <div class="duvidas__lista">
+        <details class="duvida">
+          <summary>Vocês embrulham para presente?</summary>
+          <div class="duvida__resposta"><p>Sim, sem custo adicional. Todo presente vai com papel premium, tag personalizada e laço vermelho. Na sacola, é só deixar a embalagem de Natal marcada.</p></div>
+        </details>
+        <details class="duvida">
+          <summary>Em quanto tempo o pedido chega?</summary>
+          <div class="duvida__resposta"><p>A entrega expressa leva até 2 dias úteis, para chegar antes do Natal.</p></div>
+        </details>
+        <details class="duvida">
+          <summary>E se o tamanho ou o presente não servir?</summary>
+          <div class="duvida__resposta"><p>A troca é grátis. Escreva para nós pelo formulário ou passe na loja.</p></div>
+        </details>
+        <details class="duvida">
+          <summary>Posso encomendar uma guirlanda personalizada?</summary>
+          <div class="duvida__resposta"><p>Pode. Na oficina do 5º andar você escolhe laço, luzes, enfeites, placa com nome e aroma, e o pedido de orçamento chega pronto aqui no formulário. <a class="link" href="guirlandas.html#personalize">Montar minha guirlanda</a></p></div>
+        </details>
+        <details class="duvida">
+          <summary>A loja abre aos domingos?</summary>
+          <div class="duvida__resposta"><p>Abre, das 10h às 16h. De segunda a sábado, o horário é das 9h às 18h.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="js/vendor/SplitText.min.js"></script>
+<script src="js/vendor/DrawSVGPlugin.min.js"></script>
+<script src="js/vendor/Flip.min.js"></script>
+<script src="js/vendor/CustomEase.min.js"></script>
+<script src="js/vendor/ScrambleTextPlugin.min.js"></script>
+<script src="js/dados/letreiro.js"></script>
+<script src="js/dados/catalogo.js"></script>
+<script src="js/nucleo.js"></script>
+<script src="js/chrome.js"></script>
+<script src="js/sacola.js"></script>
+<script src="js/produtos.js"></script>
+<script src="js/contato.js"></script>
+<script>Departal.iniciar()</script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR" data-andar="2">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presentes | Departal</title>
+<meta name="description" content="Encontre o presente perfeito para todos da sua lista! De crianças a adultos, temos opções especiais.">
+<link rel="icon" href="images/marca/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/chrome.css">
+<link rel="stylesheet" href="css/produtos.css">
+<link rel="stylesheet" href="css/paginas.css">
+<link rel="stylesheet" href="css/andares.css">
+<script>try{if(sessionStorage.getItem('dp-porta'))document.documentElement.classList.add('portas-fechadas')}catch(e){}</script>
+</head>
+<body>
+<noscript><p class="aviso-js">A vitrine da Departal precisa de JavaScript para acender. Ative o JavaScript no navegador para ver a loja.</p></noscript>
+<main id="conteudo">
+
+  <section class="capa capa--peca">
+    <div class="capa__peca capa__peca--vitrine" aria-hidden="true" style="--chao: 0.025"><img src="images/produtos/caixa-presentes.webp" alt="" width="800" height="800" decoding="async"></div>
+    <div class="envolve">
+      <p class="capa__num num-led">2</p>
+      <h1 class="titulo t-1 folha">Presentes</h1>
+      <p class="lide">Encontre o presente perfeito para todos da sua lista! De crianças a adultos, temos opções especiais.</p>
+    </div>
+  </section>
+
+  <section class="secao" id="produtos" aria-labelledby="titulo-produtos">
+    <div class="envolve">
+      <h2 class="titulo t-3 andar__titulo" id="titulo-produtos">Presentes em destaque</h2>
+      <div class="andar__filtros"></div>
+      <ul class="andar__grade"></ul>
+    </div>
+  </section>
+
+  <section class="secao" aria-labelledby="titulo-faixas">
+    <div class="envolve">
+      <div class="cabeca">
+        <h2 class="titulo t-2" id="titulo-faixas">Presentes por faixa de preço</h2>
+        <p class="lide">Todos merecem celebrar, independentemente do orçamento.</p>
+      </div>
+      <div class="patamares">
+        <span class="patamares__fita" aria-hidden="true"></span>
+        <div class="patamar">
+          <div class="patamar__pendente">
+            <span class="patamar__fio" aria-hidden="true"></span>
+            <div class="patamar__tag"><h3 class="patamar__valor">Até R$ 50</h3><p>Presentes criativos e acessíveis</p></div>
+          </div>
+          <ul class="patamar__lista" data-faixa="ate-50"></ul>
+        </div>
+        <div class="patamar">
+          <div class="patamar__pendente">
+            <span class="patamar__fio" aria-hidden="true"></span>
+            <div class="patamar__tag"><h3 class="patamar__valor">De R$ 50 a R$ 150</h3><p>Ótimo custo-benefício</p></div>
+          </div>
+          <ul class="patamar__lista" data-faixa="ate-150"></ul>
+        </div>
+        <div class="patamar">
+          <div class="patamar__pendente">
+            <span class="patamar__fio" aria-hidden="true"></span>
+            <div class="patamar__tag"><h3 class="patamar__valor">Acima de R$ 150</h3><p>Presentes premium e sofisticados</p></div>
+          </div>
+          <ul class="patamar__lista" data-faixa="acima-150"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao embrulho" aria-labelledby="titulo-embrulho">
+    <div class="envolve embrulho__grade">
+      <div>
+        <h2 class="titulo t-2" id="titulo-embrulho">Embalagem de Natal grátis</h2>
+        <p class="lide">Todos os nossos presentes vão com embalagem especial natalina, sem custo adicional.</p>
+        <ul class="embrulho__itens">
+          <li data-icone="presente">Papel de presente premium</li>
+          <li data-icone="etiqueta">Tag personalizada</li>
+          <li data-icone="laco">Laço vermelho</li>
+        </ul>
+        <label class="embrulho__campo">Para quem é o presente?<input class="campo" id="nome-tag" maxlength="18" autocomplete="off" placeholder="Escreva um nome"></label>
+      </div>
+      <div class="embrulho__palco" aria-hidden="true">
+        <img class="embrulho__caixa" src="images/produtos/sonhos-natal.webp" alt="" width="800" height="800" loading="lazy">
+        <div class="tag">
+          <span class="tag__fio"></span>
+          <div class="tag__cartao"><span class="tag__para">Para</span><strong class="tag__nome">você</strong><span class="tag__de">com carinho, Departal</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao dicas" aria-labelledby="titulo-dicas">
+    <div class="envolve dicas__grade">
+      <h2 class="titulo t-2" id="titulo-dicas">Um presente para cada pessoa</h2>
+      <ul class="dicas__lista">
+        <li class="dica" data-icone="pecas"><h3 class="t-4">Para quem tem criança por perto</h3><p>Prefira brinquedos educativos, que estimulam a criatividade e o desenvolvimento.</p><button class="link" type="button" data-filtro="criancas">Ver presentes para crianças</button></li>
+        <li class="dica" data-icone="metal"><h3 class="t-4">Para quem gosta de consertar</h3><p>Itens práticos, como kits de ferramentas ou acessórios de tecnologia, são sempre bem-vindos.</p><button class="link" type="button" data-filtro="mao-na-massa">Ver presentes mão na massa</button></li>
+        <li class="dica" data-icone="aroma"><h3 class="t-4">Para quem gosta de se cuidar</h3><p>Cosméticos, acessórios e itens de cuidado pessoal são excelentes opções.</p><button class="link" type="button" data-filtro="cuidados">Ver cuidados pessoais</button></li>
+        <li class="dica" data-icone="pessoas"><h3 class="t-4">Para a família toda</h3><p>Jogos, livros e itens para momentos juntos fortalecem os laços familiares.</p><button class="link" type="button" data-filtro="familia">Ver presentes para a família</button></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="js/vendor/SplitText.min.js"></script>
+<script src="js/vendor/DrawSVGPlugin.min.js"></script>
+<script src="js/vendor/Flip.min.js"></script>
+<script src="js/vendor/CustomEase.min.js"></script>
+<script src="js/vendor/ScrambleTextPlugin.min.js"></script>
+<script src="js/dados/letreiro.js"></script>
+<script src="js/dados/catalogo.js"></script>
+<script src="js/nucleo.js"></script>
+<script src="js/chrome.js"></script>
+<script src="js/sacola.js"></script>
+<script src="js/produtos.js"></script>
+<script src="js/andar.js"></script>
+<script src="js/andares/presentes.js"></script>
+<script>Departal.iniciar()</script>
+</body>
+</html>

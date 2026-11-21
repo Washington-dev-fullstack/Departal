@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR" data-andar="5">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guirlandas | Departal</title>
+<meta name="description" content="Dê as boas-vindas ao espírito natalino! Coroas decorativas para portas, paredes e mesas.">
+<link rel="icon" href="images/marca/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/chrome.css">
+<link rel="stylesheet" href="css/produtos.css">
+<link rel="stylesheet" href="css/paginas.css">
+<link rel="stylesheet" href="css/andares.css">
+<script>try{if(sessionStorage.getItem('dp-porta'))document.documentElement.classList.add('portas-fechadas')}catch(e){}</script>
+</head>
+<body>
+<noscript><p class="aviso-js">A vitrine da Departal precisa de JavaScript para acender. Ative o JavaScript no navegador para ver a loja.</p></noscript>
+<main id="conteudo">
+
+  <section class="capa capa--peca" aria-labelledby="titulo-andar">
+    <div class="capa__peca capa__peca--pendurada capa__peca--fita" aria-hidden="true" style="--px: 0.529; --py: 0.12"><div class="capa__balanco"><img src="images/produtos/guirlanda-premium.webp" alt="" width="800" height="800" decoding="async"></div></div>
+    <div class="envolve">
+      <p class="capa__num num-led">5</p>
+      <h1 class="titulo t-1 folha" id="titulo-andar">Guirlandas</h1>
+      <p class="lide">Dê as boas-vindas ao espírito natalino! Coroas decorativas para portas, paredes e mesas.</p>
+    </div>
+  </section>
+
+  <section class="secao" id="produtos" aria-labelledby="titulo-produtos">
+    <div class="envolve">
+      <h2 class="titulo t-3 andar__titulo" id="titulo-produtos">Coleção de guirlandas</h2>
+      <div class="andar__filtros"></div>
+      <ul class="andar__grade"></ul>
+    </div>
+  </section>
+
+  <section class="secao oficina" id="personalize" aria-labelledby="titulo-oficina">
+    <div class="envolve">
+      <div class="cabeca">
+        <h2 class="titulo t-2" id="titulo-oficina">Monte a sua guirlanda</h2>
+        <p class="lide">Escolha o laço, as luzes, os enfeites e até o aroma. A gente prepara o orçamento.</p>
+      </div>
+      <div class="oficina__grade">
+        <div class="oficina__palco" aria-hidden="true">
+          <img class="oficina__camada" data-camada="base" src="images/produtos/g-base.webp" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+          <img class="oficina__camada" data-camada="luzes" src="images/produtos/g-luzes.webp" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+          <img class="oficina__camada" data-camada="extras" src="images/produtos/g-extras.webp" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+          <img class="oficina__camada" data-laco="vermelho" src="images/produtos/g-laco-vermelho.webp" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+          <img class="oficina__camada" data-laco="dourado" src="images/produtos/g-laco-dourado.webp" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+          <img class="oficina__camada" data-laco="xadrez" src="images/produtos/g-laco-xadrez.webp" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+          <img class="oficina__camada" data-laco="juta" src="images/produtos/g-laco-juta.webp" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+          <div class="oficina__placa">
+            <img src="images/produtos/g-placa.webp" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+            <span class="oficina__nome"></span>
+          </div>
+          <div class="oficina__aroma"></div>
+        </div>
+        <form class="oficina__painel" autocomplete="off">
+          <fieldset>
+            <legend>Laço</legend>
+            <div class="amostras">
+              <label class="amostra amostra--vermelho"><input type="radio" name="laco" value="vermelho" checked><span><i></i>Vermelho</span></label>
+              <label class="amostra amostra--dourado"><input type="radio" name="laco" value="dourado"><span><i></i>Dourado</span></label>
+              <label class="amostra amostra--xadrez"><input type="radio" name="laco" value="xadrez"><span><i></i>Xadrez</span></label>
+              <label class="amostra amostra--juta"><input type="radio" name="laco" value="juta"><span><i></i>Juta</span></label>
+            </div>
+          </fieldset>
+          <div>
+            <label class="chave"><span>Luzes douradas</span><input type="checkbox" name="luzes" checked><span class="troca-chave" aria-hidden="true"></span></label>
+            <label class="chave"><span>Bolas douradas extras</span><input type="checkbox" name="extras"><span class="troca-chave" aria-hidden="true"></span></label>
+          </div>
+          <label class="oficina__rotulo">Placa com nome<input class="campo" type="text" name="placa" maxlength="16" placeholder="Família Silva"></label>
+          <fieldset>
+            <legend>Aroma</legend>
+            <div class="amostras">
+              <label class="amostra"><input type="radio" name="aroma" value="canela" checked><span>Canela</span></label>
+              <label class="amostra"><input type="radio" name="aroma" value="pinho"><span>Pinho</span></label>
+              <label class="amostra"><input type="radio" name="aroma" value="laranja"><span>Laranja e cravo</span></label>
+              <label class="amostra"><input type="radio" name="aroma" value="nenhum"><span>Sem aroma</span></label>
+            </div>
+          </fieldset>
+          <p class="oficina__resumo" aria-live="polite"></p>
+          <button class="btn" type="submit">Solicitar orçamento</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao andar__mais" aria-labelledby="titulo-kits">
+    <div class="envolve">
+      <h2 class="titulo t-2" id="titulo-kits">Kits de guirlandas</h2>
+      <ul class="andar__extras" data-secao="kits"></ul>
+    </div>
+  </section>
+
+  <section class="secao" aria-labelledby="titulo-colocacao">
+    <div class="envolve">
+      <h2 class="titulo t-2 andar__titulo" id="titulo-colocacao">Guia de colocação</h2>
+      <div class="etapas">
+        <span class="etapas__fio" aria-hidden="true"><i></i></span>
+        <ol class="etapas__lista">
+          <li class="etapa"><span class="etapa__num num-led" aria-hidden="true">1</span><h3 class="t-4">Altura ideal</h3><p>Posicione a guirlanda na altura dos olhos para causar mais impacto.</p></li>
+          <li class="etapa"><span class="etapa__num num-led" aria-hidden="true">2</span><h3 class="t-4">Fixação segura</h3><p>Use ganchos próprios para porta ou pregos para parede.</p></li>
+          <li class="etapa"><span class="etapa__num num-led" aria-hidden="true">3</span><h3 class="t-4">Balanceamento</h3><p>Confira se a guirlanda está nivelada e centralizada.</p></li>
+          <li class="etapa"><span class="etapa__num num-led" aria-hidden="true">4</span><h3 class="t-4">Acessórios</h3><p>Coloque laços e enfeites depois de fixar a guirlanda principal.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao dicas" aria-labelledby="titulo-dicas">
+    <div class="envolve dicas__grade">
+      <h2 class="titulo t-2" id="titulo-dicas">Onde cada guirlanda brilha mais</h2>
+      <ul class="dicas__lista">
+        <li class="dica" data-icone="casa"><h3 class="t-4">Porta de entrada</h3><p class="dica__medida num-led">50-70 cm</p><p>Escolha guirlandas de 50 a 70 cm para portas padrão e acrescente um laço vermelho.</p></li>
+        <li class="dica" data-icone="medida"><h3 class="t-4">Parede da sala</h3><p class="dica__medida num-led">80 cm ou mais</p><p>Guirlandas maiores criam um ponto focal na sala.</p></li>
+        <li class="dica" data-icone="brilho"><h3 class="t-4">Mesa de jantar</h3><p class="dica__medida num-led">25-35 cm</p><p>Mini guirlandas com velas no centro deixam a ceia mais acolhedora.</p></li>
+        <li class="dica" data-icone="led"><h3 class="t-4">Varanda e janelas</h3><p class="dica__medida num-led">com LEDs</p><p>Guirlandas com LEDs encantam quem vê a casa de fora.</p></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="js/vendor/SplitText.min.js"></script>
+<script src="js/vendor/DrawSVGPlugin.min.js"></script>
+<script src="js/vendor/Flip.min.js"></script>
+<script src="js/vendor/CustomEase.min.js"></script>
+<script src="js/vendor/ScrambleTextPlugin.min.js"></script>
+<script src="js/dados/letreiro.js"></script>
+<script src="js/dados/catalogo.js"></script>
+<script src="js/nucleo.js"></script>
+<script src="js/chrome.js"></script>
+<script src="js/sacola.js"></script>
+<script src="js/produtos.js"></script>
+<script src="js/andar.js"></script>
+<script src="js/andares/guirlandas.js"></script>
+<script>Departal.iniciar()</script>
+</body>
+</html>
